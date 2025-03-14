@@ -103,6 +103,22 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
+        /* رسم مثلث متحرك في الهيدر */
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #ff416c;
+            margin: 30px auto;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+
         /* القسم الأساسي */
         section {
             padding: 50px 20px;
@@ -147,6 +163,21 @@
 
         .service:hover, .project:hover {
             transform: translateY(-10px);
+        }
+
+        /* رسم دائرة متحركة */
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #00bcd4;
+            border-radius: 50%;
+            margin: 20px auto;
+            animation: spin 3s infinite linear;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         /* فوتر */
@@ -216,6 +247,7 @@
     <header>
         <h1 class="animate">Digital Marketing & AI Solutions</h1>
         <p class="animate">Boosting Your Brand with Cutting-Edge AI and Marketing Strategies</p>
+        <div class="triangle"></div>
         <a href="#contact" class="btn animate">Contact Me</a>
     </header>
 
@@ -264,6 +296,7 @@
             <li><i class="fas fa-envelope"></i> Email: <a href="mailto:awsafaneh9@gmail.com">awsafaneh9@gmail.com</a></li>
             <li><i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/_awsafaneh" target="_blank">_awsafaneh</a></li>
         </ul>
+        <div class="circle"></div> <!-- رسم دائرة متحركة -->
     </section>
 
     <!-- الفوتر -->
