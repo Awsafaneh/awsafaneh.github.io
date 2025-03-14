@@ -3,38 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing & AI Solutions</title>
+    <title>Aws Afaneh | Digital Marketing & AI Expert</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* إعدادات أساسية */
         body {
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7f6;
+            background: #f0f4f8;
             color: #333;
-            overflow-x: hidden;
+            text-align: center;
         }
 
-        /* الشريط العلوي */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #00bcd4;
+            background: #0098b5;
             padding: 15px 30px;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav h2 {
+            font-size: 24px;
+            color: white;
+            margin: 0;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 30px;
+            gap: 20px;
             padding: 0;
             margin: 0;
         }
@@ -44,216 +47,81 @@
         }
 
         nav ul li a {
-            color: white;
             text-decoration: none;
+            color: #fff;
             font-weight: bold;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
+            transition: 0.3s;
         }
 
         nav ul li a:hover {
             color: #ff416c;
         }
 
-        /* الهيدر */
         header {
-            background-color: #00bcd4;
-            padding: 150px 20px 50px;
+            background: linear-gradient(135deg, #00bcd4, #0098b5);
+            padding: 100px 20px 50px;
+            margin-top: 50px;
             color: white;
-            text-align: center;
-            background-image: url('https://via.placeholder.com/1920x1080.png?text=Background+Image'); /* صورة خلفية */
-            background-size: cover;
-            background-position: center;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.4rem;
-            margin-top: 10px;
         }
 
         .btn {
             display: inline-block;
-            padding: 12px 30px;
-            margin-top: 20px;
-            background-color: #ff416c;
-            color: white;
-            font-size: 1.1rem;
+            padding: 10px 20px;
+            margin-top: 15px;
+            background: #ff416c;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #ff4b2b;
+            background: #00bcd4;
         }
 
-        /* الرسومات المتحركة */
-        .animate {
-            animation: fadeInUp 2s ease-in-out;
-        }
-
-        @keyframes fadeInUp {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        /* رسم مثلث متحرك في الهيدر */
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 100px solid #ff416c;
-            margin: 30px auto;
-            animation: bounce 1s infinite alternate;
-        }
-
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-10px); }
-        }
-
-        /* القسم الأساسي */
         section {
             padding: 50px 20px;
-            text-align: center;
         }
 
-        h2 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 50px;
-        }
-
-        /* خدمات */
-        .services, .projects {
+        .contact-info {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
         }
 
-        .service, .project {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-            width: 280px;
-            text-align: center;
-            transition: transform 0.3s ease;
+        .contact-info i {
+            font-size: 30px;
+            color: #0098b5;
+            transition: 0.3s;
         }
 
-        .service h3, .project h3 {
-            font-size: 1.8rem;
-            color: #333;
-            margin-bottom: 15px;
+        .contact-info i:hover {
+            color: #ff416c;
         }
 
-        .service p, .project p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.5;
-        }
-
-        .service:hover, .project:hover {
-            transform: translateY(-10px);
-        }
-
-        /* رسم دائرة متحركة */
-        .circle {
-            width: 100px;
-            height: 100px;
-            background-color: #00bcd4;
-            border-radius: 50%;
-            margin: 20px auto;
-            animation: spin 3s infinite linear;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* فوتر */
         footer {
-            background-color: #00bcd4;
-            padding: 30px 20px;
-            text-align: center;
+            background: #0098b5;
             color: white;
+            padding: 20px;
+            margin-top: 50px;
         }
 
         footer p {
-            font-size: 1rem;
             margin: 0;
         }
 
-        footer a {
-            color: white;
+        a {
+            color: #ff416c;
             text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* استجابة للأجهزة المحمولة */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li a {
-                font-size: 1.1rem;
-                margin: 5px 0;
-            }
-
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            header p {
-                font-size: 1.2rem;
-            }
-
-            .services, .projects {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service, .project {
-                width: 90%;
-                margin-bottom: 20px;
-            }
-        }
-
-        /* تنسيق التعداد النقطي */
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            display: flex;
-            align-items: center;
-            font-size: 1.2rem;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        ul li i {
-            margin-right: 10px;
-            color: #00bcd4;
         }
     </style>
 </head>
 <body>
 
-    <!-- الشريط العلوي -->
     <nav>
+        <h2>Aws Afaneh</h2>
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -262,63 +130,61 @@
         </ul>
     </nav>
 
-    <!-- الهيدر -->
     <header>
-        <h1 class="animate">Digital Marketing & AI Solutions</h1>
-        <p class="animate">Boosting Your Brand with Cutting-Edge AI and Marketing Strategies</p>
-        <div class="triangle"></div>
-        <a href="#contact" class="btn animate">Contact Me</a>
+        <h1>Aws Afaneh</h1>
+        <p>Certified Digital Marketer & AI Specialist</p>
+        <a href="#contact" class="btn">Contact Me</a>
     </header>
 
-    <!-- خدمات -->
-    <section id="services" class="animate">
+    <section id="services">
         <h2>My Services</h2>
         <div class="services">
             <div class="service">
                 <h3>Digital Marketing</h3>
-                <p>We create high-impact marketing strategies that grow your brand’s visibility and conversions.</p>
+                <p>Creating high-impact marketing strategies to boost brand visibility.</p>
             </div>
             <div class="service">
                 <h3>AI Solutions</h3>
-                <p>AI-powered solutions designed to enhance business operations and customer experience.</p>
+                <p>Developing AI-powered tools for businesses and individuals.</p>
             </div>
         </div>
     </section>
 
-    <!-- معرض الأعمال -->
-    <section id="portfolio" class="animate">
+    <section id="portfolio">
         <h2>My Work</h2>
         <div class="projects">
             <div class="project">
                 <h3>Smart Glasses Project</h3>
-                <p>AI-powered smart glasses designed to assist the visually impaired in daily tasks.</p>
+                <p>Developing AI-powered smart glasses for visually impaired users.</p>
             </div>
             <div class="project">
                 <h3>Medical Image Analysis</h3>
-                <p>AI-powered Telegram bot to analyze medical scans and assist in diagnosis.</p>
+                <p>Telegram bot for analyzing medical scans and diagnosing conditions.</p>
             </div>
         </div>
     </section>
 
-    <!-- التقييمات -->
-    <section id="testimonials" class="animate">
+    <section id="testimonials">
         <h2>Client Testimonials</h2>
-        <p>"Aws helped us scale our marketing efforts and generate impressive results." - Client A</p>
-        <p>"The AI solutions were revolutionary for our business operations." - Client B</p>
+        <p>"Aws helped us scale our marketing campaigns and increase conversions! Highly recommended!" - Client A</p>
+        <p>"The AI solutions provided by Aws were game-changers for our business." - Client B</p>
     </section>
 
-    <!-- الاتصال -->
-    <section id="contact" class="animate">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <ul>
-            <li><i class="fas fa-envelope"></i>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-            <li><i class="fab fa-instagram"></i>Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></li>
-        </ul>
+        <p>You can reach me via:</p>
+        <div class="contact-info">
+            <a href="mailto:awsafaneh9@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/_awsafaneh" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </section>
 
-    <!-- الفوتر -->
     <footer>
-        <p>© 2025 Aws Afana. All rights reserved.</p>
+        <p>© 2025 Aws Afaneh. All rights reserved.</p>
     </footer>
 
 </body>
