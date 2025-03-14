@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aws Afaneh | Digital Marketing & AI Specialist</title>
+    <title>Digital Marketing & AI Specialist</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
-        /* تعيين خلفية اللون الأساسي للصفحة */
+        /* إعدادات الخطوط والألوان */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f8fa;
-            color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #f5f8fa;
+            color: #333;
         }
 
-        /* تصميم الشريط العلوي */
+        /* الشريط العلوي */
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #1e88e5; /* أزرق سماوي */
+            background-color: #00bcd4; /* أزرق سماوي */
             padding: 15px 30px;
             position: fixed;
             width: 100%;
@@ -31,15 +30,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* تصميم النص في الشريط العلوي */
-        nav h2 {
-            font-size: 2rem;
-            color: #fff;
-            margin: 0;
-            font-weight: bold;
-        }
-
-        /* تصميم القوائم في الشريط العلوي */
+        /* تصميم القوائم */
         nav ul {
             list-style: none;
             display: flex;
@@ -60,12 +51,11 @@
             transition: color 0.3s ease;
         }
 
-        /* تأثير التمرير عند وضع الماوس على الروابط */
         nav ul li a:hover {
             color: #ff416c;
         }
 
-        /* تصميم الهيدر */
+        /* الهيدر */
         header {
             background-color: #00bcd4; /* أزرق سماوي */
             padding: 120px 20px 50px;
@@ -76,16 +66,15 @@
         header h1 {
             font-size: 3.5rem;
             margin: 0;
-            color: #fff;
+            font-weight: 700;
         }
 
         header p {
             font-size: 1.5rem;
             margin-top: 10px;
-            color: #fff;
         }
 
-        /* تصميم زر الاتصال */
+        /* زر الاتصال */
         .btn {
             display: inline-block;
             padding: 12px 25px;
@@ -103,47 +92,81 @@
             background-color: #ff4b2b;
         }
 
-        /* تصميم منطقة الخدمات */
+        /* خدمات */
         section {
             padding: 50px 20px;
         }
 
-        .projects, .services {
+        .services {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-bottom: 50px;
         }
 
-        .project, .service {
-            background: #ffffff; /* خلفية بيضاء */
-            padding: 20px;
+        .service {
+            background: #fff;
+            padding: 30px;
             border-radius: 10px;
             width: 300px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
-        /* تأثير عند التمرير على المشروع أو الخدمة */
-        .project:hover, .service:hover {
-            transform: translateY(-10px);
-        }
-
-        .service h3, .project h3 {
-            font-size: 1.5rem;
+        .service h3 {
+            font-size: 1.8rem;
             color: #333;
+            margin-bottom: 10px;
         }
 
-        .service p, .project p {
+        .service p {
             font-size: 1rem;
             color: #555;
         }
 
-        /* تصميم الفوتر */
+        .service:hover {
+            transform: translateY(-10px);
+        }
+
+        /* معرض الأعمال */
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        /* فوتر */
         footer {
-            background-color: #1e88e5;
+            background-color: #00bcd4;
             padding: 20px;
-            margin-top: 50px;
+            text-align: center;
         }
 
         footer p {
@@ -151,14 +174,16 @@
             color: #fff;
         }
 
-        /* تصميم استجابة الموقع للأجهزة المحمولة */
+        /* استجابة للأجهزة المحمولة */
         @media (max-width: 768px) {
-            nav h2 {
-                font-size: 1.5rem;
+            nav ul {
+                flex-direction: column;
+                align-items: center;
             }
 
             nav ul li a {
                 font-size: 1rem;
+                margin: 5px 0;
             }
 
             header h1 {
@@ -169,12 +194,7 @@
                 font-size: 1rem;
             }
 
-            .projects, .services {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project, .service {
+            .service, .project {
                 width: 90%;
                 margin-bottom: 20px;
             }
@@ -185,7 +205,6 @@
 
     <!-- الشريط العلوي -->
     <nav>
-        <h2>Aws Afaneh</h2>
         <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -196,12 +215,12 @@
 
     <!-- الهيدر -->
     <header>
-        <h1>Aws Afaneh</h1>
-        <p>Certified Digital Marketer & AI Specialist</p>
+        <h1>Digital Marketing & AI Specialist</h1>
+        <p>Certified Expert in Digital Marketing, Social Media & AI Solutions</p>
         <a href="#contact" class="btn">Contact Me</a>
     </header>
 
-    <!-- الخدمات -->
+    <!-- خدمات -->
     <section id="services">
         <h2>My Services</h2>
         <div class="services">
@@ -216,7 +235,7 @@
         </div>
     </section>
 
-    <!-- الأعمال -->
+    <!-- معرض الأعمال -->
     <section id="portfolio">
         <h2>My Work</h2>
         <div class="projects">
@@ -250,7 +269,7 @@
 
     <!-- الفوتر -->
     <footer>
-        <p>&copy; 2025 Aws Afaneh. All rights reserved.</p>
+        <p>&copy; 2025 Digital Marketing & AI Specialist. All rights reserved.</p>
     </footer>
 
 </body>
