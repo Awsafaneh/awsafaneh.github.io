@@ -14,12 +14,12 @@
             font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background-color: #f0f2f5;
             color: #333;
         }
 
         .navbar {
-            background-color: #222;
+            background-color: #1a2a35;
         }
 
         .navbar-brand {
@@ -36,31 +36,36 @@
 
         .hero {
             height: 80vh;
+            background: url('https://source.unsplash.com/1600x900/?marketing,agency') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: url('https://source.unsplash.com/1600x900/?marketing') no-repeat center center/cover;
             color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
 
         .hero h1 {
-            font-size: 3.5em;
+            font-size: 4em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
         }
 
         .services-section {
-            padding: 60px 20px;
+            padding: 80px 20px;
             background: #fff;
         }
 
         .service-card {
-            background: white;
+            background: #ffffff;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 10px;
             transition: 0.3s;
             text-align: center;
             cursor: pointer;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .service-card:hover {
@@ -68,15 +73,21 @@
         }
 
         .service-card i {
-            font-size: 2.5em;
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #1a2a35;
+        }
+
+        .service-card h3 {
+            font-size: 1.8em;
+            color: #1a2a35;
             margin-bottom: 15px;
         }
 
         .service-description {
-            display: none;
             font-size: 1.2em;
-            color: #333;
-            margin-top: 10px;
+            color: #777;
+            display: none;
         }
 
         .service-card:hover .service-description {
@@ -84,9 +95,9 @@
         }
 
         .footer {
-            background: #222;
+            background: #1a2a35;
             color: white;
-            padding: 20px;
+            padding: 30px;
             margin-top: 50px;
             text-align: center;
         }
@@ -96,7 +107,7 @@
             padding: 12px 30px;
             color: white;
             text-decoration: none;
-            font-size: 1.1em;
+            font-size: 1.2em;
             border-radius: 8px;
             transition: 0.3s;
         }
@@ -109,12 +120,21 @@
             background-color: #E1306C;
         }
 
+        .btn-info {
+            background-color: #FFD700;
+            color: #1a2a35;
+            font-size: 1.2em;
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5em;
             }
-        }
 
+            .services-section {
+                padding: 60px 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -135,17 +155,18 @@
     
     <section class="hero">
         <h1 data-aos="fade-up">مرحبًا بك في SMM NPANEL</h1>
-        <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار</p>
+        <p data-aos="fade-up">نحن وكالة تسويق إلكتروني توفر لك جميع الأدوات اللازمة لزيادة التفاعل وتعزيز العلامة التجارية</p>
     </section>
     
     <section class="services-section" id="services">
         <div class="container">
+            <h2 class="text-center mb-5">خدماتنا</h2>
             <div class="row">
                 <div class="col-md-4" data-aos="zoom-in">
                     <div class="service-card">
                         <i class="fas fa-bolt"></i>
                         <h3>تعزيز التفاعل</h3>
-                        <p class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</p>
+                        <p class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة وفنية.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in">
@@ -163,12 +184,15 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center mt-5">
+                <a href="#contact" class="btn btn-info">تعرف على المزيد</a>
+            </div>
         </div>
     </section>
     
     <section id="contact" class="text-center py-5">
         <h2>تواصل معنا</h2>
-        <p>يمكنك التواصل معنا عبر الواتساب أو إنستغرام</p>
+        <p>تواصل معنا عبر الواتساب أو إنستغرام للحصول على استشارات مباشرة.</p>
         <div class="contact-btns">
             <a href="https://wa.me/962791227346" class="btn whatsapp">واتساب</a>
             <a href="https://www.instagram.com/_awsafaneh" class="btn instagram">إنستغرام</a>
