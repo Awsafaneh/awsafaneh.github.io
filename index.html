@@ -13,14 +13,13 @@
         body {
             font-family: 'Tajawal', sans-serif;
             text-align: center;
-            background: linear-gradient(135deg, #1c1c3c, #3b5998);
-            color: #fff;
+            background: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
         }
         .navbar {
-            background: rgba(0, 0, 0, 0.8);
+            background: #222;
         }
         .hero {
             height: 80vh;
@@ -29,31 +28,33 @@
             justify-content: center;
             align-items: center;
             background: url('https://source.unsplash.com/1600x900/?marketing') no-repeat center center/cover;
+            color: white;
         }
         .hero h1 {
             font-size: 3.5em;
-            color: #FFD700;
         }
         .services-section {
             padding: 60px 20px;
         }
         .service-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: white;
             padding: 30px;
             border-radius: 15px;
             transition: 0.3s;
             text-align: center;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         .service-card:hover {
             transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.4);
         }
         .service-card i {
             font-size: 2.5em;
             margin-bottom: 15px;
         }
         .footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: #222;
+            color: white;
             padding: 20px;
             margin-top: 50px;
         }
@@ -63,6 +64,15 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">SMM NPANEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     
@@ -71,32 +81,36 @@
         <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار</p>
     </section>
     
-    <section class="services-section">
+    <section class="services-section" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card">
+                    <div class="service-card" onclick="showServiceDetails('تعزيز التفاعل', 'نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.')">
                         <i class="fas fa-bolt"></i>
                         <h3>تعزيز التفاعل</h3>
-                        <p>نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card">
+                    <div class="service-card" onclick="showServiceDetails('استراتيجيات النمو', 'نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.')">
                         <i class="fas fa-chart-line"></i>
                         <h3>استراتيجيات النمو</h3>
-                        <p>نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card">
+                    <div class="service-card" onclick="showServiceDetails('استهداف إعلاني', 'نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.')">
                         <i class="fas fa-bullseye"></i>
                         <h3>استهداف إعلاني</h3>
-                        <p>نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    
+    <section id="contact" class="text-center py-5">
+        <h2>تواصل معنا</h2>
+        <p>يمكنك التواصل معنا عبر الواتساب أو إنستغرام</p>
+        <a href="https://wa.me/962791227346" class="btn btn-success">واتساب</a>
+        <a href="https://www.instagram.com/_awsafaneh" class="btn btn-danger">إنستغرام</a>
     </section>
     
     <footer class="footer">
@@ -104,11 +118,16 @@
     </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             once: true
         });
+        
+        function showServiceDetails(title, description) {
+            alert(title + "\n" + description);
+        }
     </script>
 </body>
 </html>
