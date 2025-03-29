@@ -9,24 +9,31 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
         
+        /* إعدادات أساسية */
         body {
             font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #121826;
+            background-color: #121212;
             color: #fff;
             text-align: center;
         }
         header {
-            background-color: #1f2a40;
+            background: linear-gradient(90deg, #ff4b2b, #ff416c);
             padding: 20px 0;
             text-align: center;
-            color: #FFD700;
+            color: #fff;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+        }
+        .ceo {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ffd700;
         }
         nav ul {
             list-style: none;
@@ -45,41 +52,56 @@
             transition: 0.3s;
         }
         nav ul li a:hover {
-            color: #FFD700;
+            color: #ffd700;
         }
+        
+        /* الخدمات */
         .container {
             max-width: 1200px;
             margin: 50px auto;
             padding: 30px;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(255, 0, 100, 0.4);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
         .service {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
             padding: 25px;
             border-radius: 10px;
             width: 270px;
-            transition: 0.3s;
+            transition: transform 0.3s, background 0.3s;
+            text-align: center;
             cursor: pointer;
-            position: relative;
-            display: inline-block;
-            margin: 15px;
         }
         .service:hover {
             transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.3);
         }
         .service i {
             font-size: 3em;
-            color: #FFD700;
+            color: #ffd700;
             margin-bottom: 15px;
         }
+        
         .footer {
-            background-color: #1a1a2e;
+            background: linear-gradient(90deg, #ff416c, #ff4b2b);
             padding: 40px 0;
             color: #fff;
             text-align: center;
+            font-size: 1.2em;
         }
+        .footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
         .social-links a {
             display: inline-block;
             margin: 10px;
@@ -90,14 +112,18 @@
             border-radius: 8px;
             transition: 0.3s;
         }
-        .whatsapp { background-color: #25D366; }
-        .instagram { background-color: #E1306C; }
+        .whatsapp {
+            background-color: #25D366;
+        }
+        .instagram {
+            background-color: #E1306C;
+        }
     </style>
 </head>
 <body>
-
     <header>
         <h1>Npanel Agency</h1>
+        <p class="ceo">Ceo & Founder: Aws Afaneh</p>
         <nav>
             <ul>
                 <li><a href="#home">الرئيسية</a></li>
@@ -108,27 +134,43 @@
     </header>
 
     <div id="home" class="container">
-        <h2>Npanel Agency مرحبا بك في </h2>
-        <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
+        <h2 data-aos="fade-up">مرحبًا بك في Npanel Agency</h2>
+        <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
     </div>
 
     <div id="services" class="container">
         <h2>خدماتنا</h2>
-        <div class="service"><i class="fas fa-bolt"></i><h3>تعزيز التفاعل</h3></div>
-        <div class="service"><i class="fas fa-chart-line"></i><h3>استراتيجيات النمو</h3></div>
-        <div class="service"><i class="fas fa-bullseye"></i><h3>استهداف إعلاني</h3></div>
+        <div class="services">
+            <div class="service" data-aos="zoom-in">
+                <i class="fas fa-bolt"></i>
+                <h3>تعزيز التفاعل</h3>
+            </div>
+            <div class="service" data-aos="zoom-in">
+                <i class="fas fa-chart-line"></i>
+                <h3>استراتيجيات النمو</h3>
+            </div>
+            <div class="service" data-aos="zoom-in">
+                <i class="fas fa-bullseye"></i>
+                <h3>استهداف إعلاني</h3>
+            </div>
+        </div>
     </div>
 
     <div id="contact" class="footer">
         <h3>اتصل بنا</h3>
         <div class="social-links">
-            <a href="https://wa.me/962791227346" class="whatsapp">تواصل عبر واتساب</a>
-            <a href="https://www.instagram.com/_awsafaneh" class="instagram">تابعني على إنستغرام</a>
+            <a href="https://wa.me/962791227346" class="whatsapp" target="_blank">تواصل عبر واتساب</a>
+            <a href="https://www.instagram.com/_awsafaneh" class="instagram" target="_blank">تابعني على إنستغرام</a>
         </div>
-        <p>المؤسس & CEO: Aws Afaneh</p>
+        <p>&copy; 2025 Npanel Agency - جميع الحقوق محفوظة</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
