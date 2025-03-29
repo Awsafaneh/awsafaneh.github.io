@@ -131,10 +131,28 @@
             color: #FFD700;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.4em;
+            margin: 15px;
+            display: inline-block;
         }
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons a {
+            font-size: 2em;
+            margin: 0 20px;
+            color: #FFD700;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #fff;
         }
 
         h2 {
@@ -278,8 +296,10 @@
     <div id="contact" class="footer">
         <h3>Contact Us</h3>
         <p>Get in touch for premium marketing solutions.</p>
-        <a href="https://wa.me/962791227346">WhatsApp</a> |
-        <a href="https://www.instagram.com/_awsafaneh">Instagram</a>
+        <div class="social-icons">
+            <a href="https://wa.me/962791227346" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
