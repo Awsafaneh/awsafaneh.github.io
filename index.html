@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -16,22 +16,24 @@
             overflow-x: hidden;
             background-color: #f4f4f4;
             color: #333;
-            text-align: center;
         }
 
         header {
             background-color: #1a1a2e;
-            padding: 30px 0;
+            padding: 40px 0;
             color: #fff;
+            text-align: center;
         }
 
         header h1 {
-            font-size: 4em;
+            font-size: 3.5em;
             margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         header .founder {
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: 600;
             margin-top: 10px;
             color: #FFD700;
@@ -99,7 +101,7 @@
         }
 
         .service i {
-            font-size: 4em;
+            font-size: 3.5em;
             color: #FFD700;
             margin-bottom: 20px;
         }
@@ -148,13 +150,13 @@
         }
 
         /* Responsiveness */
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
             header h1 {
                 font-size: 2.5em;
             }
 
             .container {
-                padding: 20px;
+                padding: 30px;
             }
 
             .services {
@@ -163,10 +165,61 @@
             }
 
             .service {
-                width: 90%;
+                width: 80%;
                 margin-bottom: 20px;
             }
+
+            nav ul li {
+                margin: 0 15px;
+            }
+
+            nav ul li a {
+                font-size: 1.1em;
+            }
         }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .footer {
+                font-size: 1.1em;
+            }
+
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .founder {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
     </style>
 </head>
 <body>
