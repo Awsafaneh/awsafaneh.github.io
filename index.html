@@ -42,6 +42,7 @@
             border-radius: 10px;
             width: 250px;
             transition: 0.3s;
+            cursor: pointer;
         }
         .service:hover {
             background: rgba(255, 255, 255, 0.2);
@@ -70,6 +71,19 @@
             font-size: 1.2em;
             color: #bbb;
         }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -78,16 +92,16 @@
         <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
         
         <div class="services">
-            <div class="service">🚀 تعزيز التفاعل على السوشيال ميديا</div>
-            <div class="service">📈 استراتيجيات نمو الحسابات</div>
-            <div class="service">🎯 استهداف دقيق للإعلانات</div>
-            <div class="service">🛒 إدارة الحملات التسويقية</div>
-            <div class="service">📢 تحسين العلامة التجارية</div>
+            <div class="service" onclick="window.location.href='service1.html'">🚀 تعزيز التفاعل على السوشيال ميديا</div>
+            <div class="service" onclick="window.location.href='service2.html'">📈 استراتيجيات نمو الحسابات</div>
+            <div class="service" onclick="window.location.href='service3.html'">🎯 استهداف دقيق للإعلانات</div>
+            <div class="service" onclick="window.location.href='service4.html'">🛒 إدارة الحملات التسويقية</div>
+            <div class="service" onclick="window.location.href='service5.html'">📢 تحسين العلامة التجارية</div>
         </div>
         
         <div class="social-links">
             <a href="https://wa.me/962791227346" class="whatsapp" target="_blank">تواصل عبر واتساب</a>
-            <a href="https://www.instagram.com/awsafaneh_" class="instagram" target="_blank">تابعني على إنستغرام</a>
+            <a href="https://www.instagram.com/_awsafaneh" class="instagram" target="_blank">تابعني على إنستغرام</a>
         </div>
         
         <div class="owner">المؤسس: Aws Afaneh</div>
