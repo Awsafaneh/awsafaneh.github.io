@@ -12,15 +12,28 @@
         
         body {
             font-family: 'Tajawal', sans-serif;
-            text-align: center;
-            background: #f4f4f4;
-            color: #333;
             margin: 0;
             padding: 0;
+            background: #f4f4f4;
+            color: #333;
         }
+
         .navbar {
-            background: #222;
+            background-color: #222;
         }
+
+        .navbar-brand {
+            color: #FFD700;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #FFD700;
+        }
+
         .hero {
             height: 80vh;
             display: flex;
@@ -30,12 +43,16 @@
             background: url('https://source.unsplash.com/1600x900/?marketing') no-repeat center center/cover;
             color: white;
         }
+
         .hero h1 {
             font-size: 3.5em;
         }
+
         .services-section {
             padding: 60px 20px;
+            background: #fff;
         }
+
         .service-card {
             background: white;
             padding: 30px;
@@ -45,19 +62,59 @@
             cursor: pointer;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
+
         .service-card:hover {
             transform: scale(1.05);
         }
+
         .service-card i {
             font-size: 2.5em;
             margin-bottom: 15px;
         }
+
+        .service-description {
+            display: none;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .service-card:hover .service-description {
+            display: block;
+        }
+
         .footer {
             background: #222;
             color: white;
             padding: 20px;
             margin-top: 50px;
+            text-align: center;
         }
+
+        .contact-btns a {
+            margin: 10px;
+            padding: 12px 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+        }
+
+        .instagram {
+            background-color: #E1306C;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -85,21 +142,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card" onclick="showServiceDetails('تعزيز التفاعل', 'نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.')">
+                    <div class="service-card">
                         <i class="fas fa-bolt"></i>
                         <h3>تعزيز التفاعل</h3>
+                        <p class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card" onclick="showServiceDetails('استراتيجيات النمو', 'نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.')">
+                    <div class="service-card">
                         <i class="fas fa-chart-line"></i>
                         <h3>استراتيجيات النمو</h3>
+                        <p class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="zoom-in">
-                    <div class="service-card" onclick="showServiceDetails('استهداف إعلاني', 'نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.')">
+                    <div class="service-card">
                         <i class="fas fa-bullseye"></i>
                         <h3>استهداف إعلاني</h3>
+                        <p class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</p>
                     </div>
                 </div>
             </div>
@@ -109,8 +169,10 @@
     <section id="contact" class="text-center py-5">
         <h2>تواصل معنا</h2>
         <p>يمكنك التواصل معنا عبر الواتساب أو إنستغرام</p>
-        <a href="https://wa.me/962791227346" class="btn btn-success">واتساب</a>
-        <a href="https://www.instagram.com/_awsafaneh" class="btn btn-danger">إنستغرام</a>
+        <div class="contact-btns">
+            <a href="https://wa.me/962791227346" class="btn whatsapp">واتساب</a>
+            <a href="https://www.instagram.com/_awsafaneh" class="btn instagram">إنستغرام</a>
+        </div>
     </section>
     
     <footer class="footer">
@@ -124,10 +186,6 @@
             duration: 1000,
             once: true
         });
-        
-        function showServiceDetails(title, description) {
-            alert(title + "\n" + description);
-        }
     </script>
 </body>
 </html>
