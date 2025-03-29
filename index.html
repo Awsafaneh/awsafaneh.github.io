@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMM NPANEL - أفضل خدمات التسويق</title>
+    <title>SMM NPANEL - خدمات التسويق الإلكتروني</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        /* إعدادات أساسية */
         body {
             font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #121212, #1a1a2e);
-            color: white;
-        }
-        nav {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px;
+            overflow-x: hidden;
+            background-color: #161b33;
+            color: #fff;
             text-align: center;
+        }
+        header {
+            background-color: #2f3c54;
+            padding: 20px 0;
+            text-align: center;
+            color: #FFD700;
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
         }
         nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             font-size: 1.2em;
             transition: 0.3s;
@@ -38,104 +48,178 @@
         nav ul li a:hover {
             color: #FFD700;
         }
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: url('hero-bg.jpg') center/cover;
+        
+        /* تنسيق الأزرار و الخدمات */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-        .hero h1 {
-            font-size: 3em;
-            color: #FFD700;
-        }
-        .hero p {
-            font-size: 1.5em;
-        }
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #FFD700;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #e6c300;
-        }
-        .services {
+        .services, .service {
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            padding: 50px 20px;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 50px;
         }
         .service {
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            margin: 15px;
+            padding: 25px;
             border-radius: 10px;
+            width: 270px;
+            transition: transform 0.3s, background 0.3s;
             text-align: center;
-            width: 250px;
-            transition: 0.3s;
+            cursor: pointer;
+            position: relative;
         }
         .service:hover {
-            background: rgba(255, 255, 255, 0.3);
             transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
         }
         .service i {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3em;
+            color: #FFD700;
+            margin-bottom: 15px;
         }
-        footer {
+        .service-description {
+            display: none;
+            position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+        }
+        .service:hover .service-description {
+            display: block;
+        }
+
+        /* إضافة فواصل و تفاعلات عند الانتقال */
+        .footer {
+            background-color: #1a1a2e;
+            padding: 40px 0;
+            color: #fff;
             text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.9);
+            font-size: 1.2em;
+        }
+
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* التنقل التفاعلي */
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .whatsapp {
+            background-color: #25D366;
+        }
+        .instagram {
+            background-color: #E1306C;
+        }
+
+        /* تأثيرات الرسوم المتحركة */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                width: 80%;
+            }
         }
     </style>
 </head>
 <body>
+
     <header>
+        <h1>SMM NPANEL</h1>
         <nav>
             <ul>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="services.html">الخدمات</a></li>
-                <li><a href="login.html">تسجيل الدخول</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section class="hero" data-aos="fade-up">
-        <h1>مرحبًا بك في SMM NPANEL</h1>
-        <p>أفضل خدمات التسويق الإلكتروني لتنمية حساباتك وزيادة التفاعل!</p>
-        <a href="services.html" class="btn">استكشاف الخدمات</a>
-    </section>
-    
-    <section class="services">
-        <div class="service" data-aos="fade-up">
-            <i class="fas fa-bolt"></i>
-            <h2>تعزيز التفاعل</h2>
-            <p>احصل على المزيد من الإعجابات والتعليقات والمتابعين.</p>
+
+    <!-- الصفحة الرئيسية -->
+    <div id="home" class="container">
+        <h2 data-aos="fade-up">مرحبًا بك في SMM NPANEL</h2>
+        <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
+        
+        <div class="services">
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
+                <i class="fas fa-bolt"></i>
+                <h3>تعزيز التفاعل</h3>
+                <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</div>
+            </div>
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
+                <i class="fas fa-chart-line"></i>
+                <h3>استراتيجيات النمو</h3>
+                <div class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</div>
+            </div>
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#targeting'">
+                <i class="fas fa-bullseye"></i>
+                <h3>استهداف إعلاني</h3>
+                <div class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</div>
+            </div>
         </div>
-        <div class="service" data-aos="fade-up">
-            <i class="fas fa-chart-line"></i>
-            <h2>استراتيجيات النمو</h2>
-            <p>خطط مخصصة لمساعدتك على تنمية حسابك بسرعة.</p>
+    </div>
+
+    <!-- صفحة الخدمات -->
+    <div id="services" class="container">
+        <h2>تفاصيل الخدمات</h2>
+        <div id="growth" class="service" data-aos="zoom-in">
+            <h3>استراتيجيات النمو</h3>
+            <p>نقدم لك استراتيجيات مخصصة وخططًا فعالة لزيادة النمو بشكل سريع وملحوظ. نوفر لك كل الأدوات والموارد التي تحتاجها لتحقيق نجاحك.</p>
         </div>
-        <div class="service" data-aos="fade-up">
-            <i class="fas fa-bullseye"></i>
-            <h2>إعلانات مستهدفة</h2>
-            <p>إعلانات تصل مباشرة إلى جمهورك المستهدف.</p>
+        <div id="targeting" class="service" data-aos="zoom-in">
+            <h3>استهداف إعلاني</h3>
+            <p>نساعدك في تحديد وتحليل جمهورك المستهدف بدقة عبر أحدث الأدوات الإعلانية لتحقيق أقصى استفادة من الحملات الإعلانية.</p>
         </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 SMM NPANEL | جميع الحقوق محفوظة</p>
-    </footer>
-    
+    </div>
+
+    <!-- صفحة الاتصال -->
+    <div id="contact" class="footer">
+        <h3>اتصل بنا</h3>
+        <div class="social-links">
+            <a href="https://wa.me/962791227346" class="whatsapp" target="_blank">تواصل عبر واتساب</a>
+            <a href="https://www.instagram.com/_awsafaneh" class="instagram" target="_blank">تابعني على إنستغرام</a>
+        </div>
+        <p>المؤسس: Aws Afaneh</p>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
     </script>
+
 </body>
 </html>
