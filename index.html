@@ -3,30 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMM NPANEL - خدمات التسويق الإلكتروني</title>
+    <title>Npanel Agency - خدمات التسويق الإلكتروني</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
         
-        /* إعدادات أساسية */
         body {
             font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #161b33;
+            background-color: #121826;
             color: #fff;
             text-align: center;
         }
         header {
-            background-color: #2f3c54;
+            background-color: #1f2a40;
             padding: 20px 0;
             text-align: center;
             color: #FFD700;
         }
         header h1 {
-            font-size: 3.5em;
+            font-size: 3em;
             margin: 0;
         }
         nav ul {
@@ -48,32 +47,23 @@
         nav ul li a:hover {
             color: #FFD700;
         }
-        
-        /* تنسيق الأزرار و الخدمات */
         .container {
             max-width: 1200px;
             margin: 50px auto;
             padding: 30px;
             background: rgba(0, 0, 0, 0.8);
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-        .services, .service {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin-bottom: 50px;
         }
         .service {
             background: rgba(255, 255, 255, 0.1);
             padding: 25px;
             border-radius: 10px;
             width: 270px;
-            transition: transform 0.3s, background 0.3s;
-            text-align: center;
+            transition: 0.3s;
             cursor: pointer;
             position: relative;
+            display: inline-block;
+            margin: 15px;
         }
         .service:hover {
             transform: scale(1.05);
@@ -84,38 +74,12 @@
             color: #FFD700;
             margin-bottom: 15px;
         }
-        .service-description {
-            display: none;
-            position: absolute;
-            bottom: -60px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            width: 100%;
-        }
-        .service:hover .service-description {
-            display: block;
-        }
-
-        /* إضافة فواصل و تفاعلات عند الانتقال */
         .footer {
             background-color: #1a1a2e;
             padding: 40px 0;
             color: #fff;
             text-align: center;
-            font-size: 1.2em;
         }
-
-        .footer a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* التنقل التفاعلي */
         .social-links a {
             display: inline-block;
             margin: 10px;
@@ -126,37 +90,14 @@
             border-radius: 8px;
             transition: 0.3s;
         }
-        .whatsapp {
-            background-color: #25D366;
-        }
-        .instagram {
-            background-color: #E1306C;
-        }
-
-        /* تأثيرات الرسوم المتحركة */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                padding: 20px;
-            }
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service {
-                width: 80%;
-            }
-        }
+        .whatsapp { background-color: #25D366; }
+        .instagram { background-color: #E1306C; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>SMM NPANEL</h1>
+        <h1>Npanel Agency</h1>
         <nav>
             <ul>
                 <li><a href="#home">الرئيسية</a></li>
@@ -166,60 +107,28 @@
         </nav>
     </header>
 
-    <!-- الصفحة الرئيسية -->
     <div id="home" class="container">
-        <h2 data-aos="fade-up">مرحبًا بك في SMM NPANEL</h2>
-        <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
-        
-        <div class="services">
-            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
-                <i class="fas fa-bolt"></i>
-                <h3>تعزيز التفاعل</h3>
-                <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</div>
-            </div>
-            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
-                <i class="fas fa-chart-line"></i>
-                <h3>استراتيجيات النمو</h3>
-                <div class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</div>
-            </div>
-            <div class="service" data-aos="zoom-in" onclick="window.location.href='#targeting'">
-                <i class="fas fa-bullseye"></i>
-                <h3>استهداف إعلاني</h3>
-                <div class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</div>
-            </div>
-        </div>
+        <h2>Npanel Agency مرحبا بك في </h2>
+        <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
     </div>
 
-    <!-- صفحة الخدمات -->
     <div id="services" class="container">
-        <h2>تفاصيل الخدمات</h2>
-        <div id="growth" class="service" data-aos="zoom-in">
-            <h3>استراتيجيات النمو</h3>
-            <p>نقدم لك استراتيجيات مخصصة وخططًا فعالة لزيادة النمو بشكل سريع وملحوظ. نوفر لك كل الأدوات والموارد التي تحتاجها لتحقيق نجاحك.</p>
-        </div>
-        <div id="targeting" class="service" data-aos="zoom-in">
-            <h3>استهداف إعلاني</h3>
-            <p>نساعدك في تحديد وتحليل جمهورك المستهدف بدقة عبر أحدث الأدوات الإعلانية لتحقيق أقصى استفادة من الحملات الإعلانية.</p>
-        </div>
+        <h2>خدماتنا</h2>
+        <div class="service"><i class="fas fa-bolt"></i><h3>تعزيز التفاعل</h3></div>
+        <div class="service"><i class="fas fa-chart-line"></i><h3>استراتيجيات النمو</h3></div>
+        <div class="service"><i class="fas fa-bullseye"></i><h3>استهداف إعلاني</h3></div>
     </div>
 
-    <!-- صفحة الاتصال -->
     <div id="contact" class="footer">
         <h3>اتصل بنا</h3>
         <div class="social-links">
-            <a href="https://wa.me/962791227346" class="whatsapp" target="_blank">تواصل عبر واتساب</a>
-            <a href="https://www.instagram.com/_awsafaneh" class="instagram" target="_blank">تابعني على إنستغرام</a>
+            <a href="https://wa.me/962791227346" class="whatsapp">تواصل عبر واتساب</a>
+            <a href="https://www.instagram.com/_awsafaneh" class="instagram">تابعني على إنستغرام</a>
         </div>
-        <p>المؤسس: Aws Afaneh</p>
+        <p>المؤسس & CEO: Aws Afaneh</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
-
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
