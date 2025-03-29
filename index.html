@@ -3,262 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMM NPANEL - خدمات التسويق الإلكتروني</title>
+    <title>SMM NPANEL - أفضل خدمات التسويق</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        /* تعيين الخطوط الأساسية */
-        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
-        
-        body {
-            font-family: 'Tajawal', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1f1f2e;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        /* شريط التنقل */
-        header {
-            background: #242f3e;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-        }
-
-        header nav ul {
-            list-style: none;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-        }
-
-        header nav ul li {
-            margin: 0 30px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            transition: 0.3s;
-        }
-
-        header nav ul li a:hover {
-            background: #FFD700;
-            border-radius: 5px;
-        }
-
-        /* الصفحة الرئيسية */
-        .hero {
-            text-align: center;
-            padding-top: 120px;
-            padding-bottom: 50px;
-            background: linear-gradient(135deg, #3c4b7c, #7b7f99);
-        }
-
-        .hero h1 {
-            font-size: 4em;
-            color: #FFD700;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            color: #dcdcdc;
-        }
-
-        /* تفاعل الأزرار */
-        .service-button {
-            background: #FFD700;
-            color: #242f3e;
-            font-size: 1.1em;
-            padding: 15px 40px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .service-button:hover {
-            background: #f7b500;
-        }
-
-        /* الخدمات */
-        .services {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-
-        .service {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            width: 280px;
-            cursor: pointer;
-            transition: 0.3s;
-            position: relative;
-            text-align: center;
-        }
-
-        .service:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.05);
-        }
-
-        .service i {
-            font-size: 2.5em;
-            color: #FFD700;
-            margin-bottom: 15px;
-        }
-
-        .service-description {
-            display: none;
-            position: absolute;
-            bottom: -60px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #333;
-            color: #fff;
-            padding: 15px;
-            border-radius: 10px;
-            width: 100%;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-
-        .service:hover .service-description {
-            display: block;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #242f3e;
-            padding: 40px 20px;
-            color: #fff;
-            text-align: center;
-        }
-
-        .footer a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-        }
-
-        .footer a:hover {
-            color: #f7b500;
-        }
-
-        /* تأثيرات الرسوم المتحركة */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        /* صفحة تفاعلية لعرض التفاصيل */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0,0,0);
-            background-color: rgba(0,0,0,0.4);
-            padding-top: 60px;
-        }
-
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-        }
-
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        /* استجابة للأجهزة المختلفة */
-        @media (max-width: 768px) {
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service {
-                width: 90%;
-            }
-
-            .hero h1 {
-                font-size: 2.5em;
-            }
-
-            .hero p {
-                font-size: 1.2em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- الصفحة الرئيسية -->
-    <section id="home" class="hero">
+    
+    <section class="hero" data-aos="fade-up">
         <h1>مرحبًا بك في SMM NPANEL</h1>
-        <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار</p>
-        <a href="#services" class="service-button">استعرض خدماتنا</a>
+        <p>أفضل خدمات التسويق الإلكتروني لتنمية حساباتك وزيادة التفاعل!</p>
+        <a href="services.html" class="btn">استكشاف الخدمات</a>
     </section>
-
-    <!-- الخدمات -->
-    <section id="services" class="container">
-        <h2>خدماتنا</h2>
-        <div class="services">
-            <div class="service" onclick="showModal('service1')">
-                <i class="fas fa-bolt"></i>
-                <h3>تعزيز التفاعل</h3>
-                <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل.</div>
-            </div>
-            <div class="service" onclick="showModal('service2')">
-                <i class="fas fa-chart-line"></i>
-                <h3>استراتيجيات النمو</h3>
-                <div class="service-description">نوفر لك استراتيجيات مخصصة للنمو السريع.</div>
-            </div>
-            <div class="service" onclick="showModal('service3')">
-                <i class="fas fa-bullseye"></i>
-                <h3>استهداف إعلاني</h3>
-                <div class="service-description">نساعدك في تحديد الجمهور المستهدف بدقة.</div>
-            </div>
+    
+    <section class="services">
+        <div class="service" data-aos="fade-up">
+            <i class="fas fa-bolt"></i>
+            <h2>تعزيز التفاعل</h2>
+            <p>احصل على المزيد من الإعجابات والتعليقات والمتابعين.</p>
+        </div>
+        <div class="service" data-aos="fade-up">
+            <i class="fas fa-chart-line"></i>
+            <h2>استراتيجيات النمو</h2>
+            <p>خطط مخصصة لمساعدتك على تنمية حسابك بسرعة.</p>
+        </div>
+        <div class="service" data-aos="fade-up">
+            <i class="fas fa-bullseye"></i>
+            <h2>إعلانات مستهدفة</h2>
+            <p>إعلانات تصل مباشرة إلى جمهورك المستهدف.</p>
         </div>
     </section>
-
-    <!-- صفحة الاتصال -->
-    <div id="contact" class="footer">
-        <h3>اتصل بنا</h3>
-        <
+    
+    <footer>
+        <p>&copy; 2025 SMM NPANEL | جميع الحقوق محفوظة</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
