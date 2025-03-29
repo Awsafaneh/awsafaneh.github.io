@@ -7,34 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
         
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #121212;
-            color: #fff;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
+
         header {
             background-color: #1a1a2e;
-            padding: 20px 0;
-            color: #FFD700;
+            padding: 30px 0;
+            color: #fff;
         }
+
         header h1 {
-            font-size: 3.5em;
+            font-size: 4em;
             margin: 0;
         }
+
         header .founder {
             font-size: 1.5em;
-            font-weight: bold;
+            font-weight: 600;
             margin-top: 10px;
             color: #FFD700;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -42,73 +46,126 @@
             justify-content: center;
             margin-top: 20px;
         }
+
         nav ul li {
-            margin: 0 20px;
+            margin: 0 25px;
         }
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.2em;
+            font-size: 1.3em;
             transition: 0.3s;
+            letter-spacing: 1px;
         }
+
         nav ul li a:hover {
             color: #FFD700;
         }
+
         .container {
             max-width: 1200px;
             margin: 50px auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            background: #fff;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+            text-align: left;
         }
+
         .services {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 30px;
             justify-content: center;
             margin-bottom: 50px;
         }
+
         .service {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 10px;
-            width: 270px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
             transition: transform 0.3s, background 0.3s;
             text-align: center;
             cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
+
         .service:hover {
             transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.2);
+            background-color: #f0f0f0;
         }
+
         .service i {
-            font-size: 3em;
+            font-size: 4em;
             color: #FFD700;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
+
         .service h3 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             margin-bottom: 15px;
+            font-weight: 600;
+            color: #333;
         }
+
         .service p {
-            font-size: 1em;
-            margin-bottom: 15px;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
+
         .footer {
             background-color: #1a1a2e;
-            padding: 40px 0;
+            padding: 50px 0;
             color: #fff;
             text-align: center;
             font-size: 1.2em;
         }
+
         .footer a {
             color: #FFD700;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #1a1a2e;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 90%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -129,17 +186,17 @@
         <h2>Welcome to Npanel Agency</h2>
         <p>Your ultimate destination for professional digital marketing services.</p>
         <div class="services">
-            <div class="service">
+            <div class="service" data-aos="fade-up">
                 <i class="fas fa-camera"></i>
                 <h3>Photography & Media</h3>
                 <p>Our dedicated media team captures high-quality visuals to enhance your brand identity.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-bullhorn"></i>
                 <h3>Advertising & Promotions</h3>
                 <p>We design strategic ad campaigns to maximize your brand reach and audience engagement.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-chart-line"></i>
                 <h3>Analytics & Optimization</h3>
                 <p>Our experts analyze performance data to refine your marketing strategies for better results.</p>
@@ -150,15 +207,15 @@
     <div id="services" class="container">
         <h2>Our Services</h2>
         <div class="services">
-            <div class="service">
+            <div class="service" data-aos="fade-up">
                 <h3>Social Media Growth</h3>
                 <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
                 <h3>Targeted Advertising</h3>
                 <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
                 <h3>Creative Branding</h3>
                 <p>We develop unique branding solutions to establish a powerful market presence.</p>
             </div>
@@ -171,5 +228,10 @@
         <a href="https://wa.me/962791227346">WhatsApp</a> |
         <a href="https://www.instagram.com/_awsafaneh">Instagram</a>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
