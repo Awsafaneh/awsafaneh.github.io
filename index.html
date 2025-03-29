@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMM NPANEL - خدمات التسويق الإلكتروني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
         
         body {
             font-family: 'Tajawal', sans-serif;
             text-align: center;
-            background: linear-gradient(135deg, #000428, #004e92);
+            background: linear-gradient(135deg, #1c1c3c, #3b5998);
             color: #fff;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 50px auto;
             padding: 30px;
             background: rgba(255, 255, 255, 0.1);
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
             border-radius: 15px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
             color: #FFD700;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.3em;
             color: #f8f9fa;
         }
         .services {
@@ -41,14 +45,20 @@
         .service {
             background: rgba(255, 255, 255, 0.2);
             padding: 20px;
-            border-radius: 10px;
-            width: 250px;
+            border-radius: 15px;
+            width: 260px;
             transition: 0.3s;
             cursor: pointer;
             position: relative;
+            overflow: hidden;
         }
         .service:hover {
+            transform: scale(1.05);
             background: rgba(255, 255, 255, 0.4);
+        }
+        .service i {
+            font-size: 2em;
+            margin-bottom: 10px;
         }
         .service-description {
             display: none;
@@ -90,6 +100,10 @@
             font-size: 1.2em;
             color: #FFD700;
         }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
         @media (max-width: 768px) {
             .container {
                 width: 90%;
@@ -106,24 +120,24 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h1>مرحبًا بك في SMM NPANEL</h1>
         <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
         
         <div class="services">
-            <div class="service">🚀 تعزيز التفاعل على السوشيال ميديا
+            <div class="service" data-aos="zoom-in"><i class="fas fa-bolt"></i> تعزيز التفاعل
                 <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</div>
             </div>
-            <div class="service">📈 استراتيجيات نمو الحسابات
+            <div class="service" data-aos="zoom-in"><i class="fas fa-chart-line"></i> استراتيجيات النمو
                 <div class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</div>
             </div>
-            <div class="service">🎯 استهداف دقيق للإعلانات
+            <div class="service" data-aos="zoom-in"><i class="fas fa-bullseye"></i> استهداف إعلاني
                 <div class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</div>
             </div>
-            <div class="service">🛒 إدارة الحملات التسويقية
+            <div class="service" data-aos="zoom-in"><i class="fas fa-shopping-cart"></i> إدارة الحملات
                 <div class="service-description">نقدم لك إدارة شاملة لحملاتك التسويقية لتحقيق أفضل النتائج.</div>
             </div>
-            <div class="service">📢 تحسين العلامة التجارية
+            <div class="service" data-aos="zoom-in"><i class="fas fa-star"></i> تحسين العلامة التجارية
                 <div class="service-description">نساعدك على بناء هوية قوية لعلامتك التجارية وجذب الجمهور المناسب.</div>
             </div>
         </div>
@@ -135,5 +149,13 @@
         
         <div class="owner">المؤسس: Aws Afaneh</div>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
