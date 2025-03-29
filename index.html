@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMM NPANEL - خدمات التسويق الإلكتروني</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
         body {
             font-family: 'Tajawal', sans-serif;
             text-align: center;
-            background-color: #121212;
+            background: linear-gradient(135deg, #000428, #004e92);
             color: #fff;
             margin: 0;
             padding: 0;
@@ -17,17 +19,17 @@
             max-width: 900px;
             margin: 50px auto;
             padding: 30px;
-            background: linear-gradient(135deg, #1f1c2c, #928dab);
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
             border-radius: 15px;
         }
         h1 {
             font-size: 2.5em;
-            color: #f8f9fa;
+            color: #FFD700;
         }
         p {
             font-size: 1.2em;
-            color: #e0e0e0;
+            color: #f8f9fa;
         }
         .services {
             margin-top: 30px;
@@ -37,15 +39,32 @@
             gap: 20px;
         }
         .service {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.2);
             padding: 20px;
             border-radius: 10px;
             width: 250px;
             transition: 0.3s;
             cursor: pointer;
+            position: relative;
         }
         .service:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .service-description {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .service:hover .service-description {
+            display: block;
         }
         .social-links {
             margin-top: 30px;
@@ -69,7 +88,7 @@
         .owner {
             margin-top: 20px;
             font-size: 1.2em;
-            color: #bbb;
+            color: #FFD700;
         }
         @media (max-width: 768px) {
             .container {
@@ -92,11 +111,21 @@
         <p>أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
         
         <div class="services">
-            <div class="service" onclick="window.location.href='service1.html'">🚀 تعزيز التفاعل على السوشيال ميديا</div>
-            <div class="service" onclick="window.location.href='service2.html'">📈 استراتيجيات نمو الحسابات</div>
-            <div class="service" onclick="window.location.href='service3.html'">🎯 استهداف دقيق للإعلانات</div>
-            <div class="service" onclick="window.location.href='service4.html'">🛒 إدارة الحملات التسويقية</div>
-            <div class="service" onclick="window.location.href='service5.html'">📢 تحسين العلامة التجارية</div>
+            <div class="service">🚀 تعزيز التفاعل على السوشيال ميديا
+                <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</div>
+            </div>
+            <div class="service">📈 استراتيجيات نمو الحسابات
+                <div class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</div>
+            </div>
+            <div class="service">🎯 استهداف دقيق للإعلانات
+                <div class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</div>
+            </div>
+            <div class="service">🛒 إدارة الحملات التسويقية
+                <div class="service-description">نقدم لك إدارة شاملة لحملاتك التسويقية لتحقيق أفضل النتائج.</div>
+            </div>
+            <div class="service">📢 تحسين العلامة التجارية
+                <div class="service-description">نساعدك على بناء هوية قوية لعلامتك التجارية وجذب الجمهور المناسب.</div>
+            </div>
         </div>
         
         <div class="social-links">
