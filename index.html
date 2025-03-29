@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap');
 
         body {
-            font-family: 'Roboto', sans-serif;  /* تغيير نوع الخط */
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
@@ -20,10 +20,10 @@
 
         header {
             background-color: #1a1a2e;
-            padding: 40px 0;
+            padding: 50px 0;
             color: #fff;
             text-align: center;
-            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
@@ -31,11 +31,7 @@
             margin: 0;
             text-transform: uppercase;
             letter-spacing: 2px;
-            transition: transform 0.3s ease;
-        }
-
-        header h1:hover {
-            transform: scale(1.1); /* تأثير تكبير عند مرور الماوس */
+            font-family: 'Raleway', sans-serif;
         }
 
         header .founder {
@@ -45,6 +41,7 @@
             color: #FFD700;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
         }
 
         nav ul {
@@ -63,13 +60,13 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.3em;
-            transition: color 0.3s ease, transform 0.3s;
+            transition: 0.3s;
             letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
         }
 
         nav ul li a:hover {
             color: #FFD700;
-            transform: scale(1.1); /* تأثير تكبير عند المرور */
         }
 
         .container {
@@ -80,7 +77,6 @@
             border-radius: 15px;
             box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
             text-align: left;
-            position: relative;
         }
 
         .services {
@@ -96,7 +92,7 @@
             padding: 30px;
             border-radius: 15px;
             width: 280px;
-            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, background 0.3s;
             text-align: center;
             cursor: pointer;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -106,7 +102,6 @@
         .service:hover {
             transform: scale(1.05);
             background-color: #f0f0f0;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* تأثير الظل عند المرور */
         }
 
         .service i {
@@ -120,6 +115,7 @@
             margin-bottom: 15px;
             font-weight: 600;
             color: #333;
+            font-family: 'Raleway', sans-serif;
         }
 
         .service p {
@@ -134,6 +130,7 @@
             color: #fff;
             text-align: center;
             font-size: 1.2em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .footer a {
@@ -143,10 +140,12 @@
             font-size: 1.4em;
             margin: 15px;
             display: inline-block;
+            transition: color 0.3s;
         }
 
         .footer a:hover {
             text-decoration: underline;
+            color: #fff;
         }
 
         .footer .social-icons {
@@ -169,16 +168,12 @@
             color: #1a1a2e;
             font-weight: 600;
             margin-bottom: 40px;
-            transition: color 0.3s ease;
-        }
-
-        h2:hover {
-            color: #FFD700; /* تغيير اللون عند مرور الماوس */
         }
 
         .services h2 {
             margin-bottom: 30px;
             color: #333;
+            font-family: 'Raleway', sans-serif;
         }
 
         /* Responsiveness */
@@ -256,8 +251,8 @@
 </head>
 <body>
     <header>
-        <h1 data-aos="fade-down">Npanel Agency</h1>
-        <div class="founder" data-aos="fade-up">CEO & Founder: Aws Afaneh</div>
+        <h1>Npanel Agency</h1>
+        <div class="founder">CEO & Founder: Aws Afaneh</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -268,7 +263,7 @@
     </header>
 
     <div id="home" class="container">
-        <h2 data-aos="fade-right">Welcome to Npanel Agency</h2>
+        <h2>Welcome to Npanel Agency</h2>
         <p>Your ultimate destination for professional digital marketing services.</p>
         <div class="services">
             <div class="service" data-aos="fade-up">
@@ -290,7 +285,7 @@
     </div>
 
     <div id="services" class="container">
-        <h2 data-aos="fade-left">Our Services</h2>
+        <h2>Our Services</h2>
         <div class="services">
             <div class="service" data-aos="fade-up">
                 <h3>Social Media Growth</h3>
@@ -311,14 +306,9 @@
         <h3>Contact Us</h3>
         <p>Get in touch for premium marketing solutions.</p>
         <div class="social-icons">
-            <a href="https://wa.me/962791227346" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-</body>
-</html>
+    <script src="https
