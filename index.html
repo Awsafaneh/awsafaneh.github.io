@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        /* إضافة خطوط وتنسيقات */
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        /* إعدادات أساسية */
         body {
             font-family: 'Tajawal', sans-serif;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            background-color: #1a1a2e;
+            background-color: #161b33;
             color: #fff;
-        }
-        header {
-            background-color: #162447;
-            padding: 20px 0;
             text-align: center;
         }
-        header h1 {
-            font-size: 3em;
+        header {
+            background-color: #2f3c54;
+            padding: 20px 0;
+            text-align: center;
             color: #FFD700;
+        }
+        header h1 {
+            font-size: 3.5em;
             margin: 0;
         }
         nav ul {
@@ -35,7 +37,7 @@
             margin-top: 20px;
         }
         nav ul li {
-            margin: 0 15px;
+            margin: 0 20px;
         }
         nav ul li a {
             color: #fff;
@@ -46,7 +48,8 @@
         nav ul li a:hover {
             color: #FFD700;
         }
-
+        
+        /* تنسيق الأزرار و الخدمات */
         .container {
             max-width: 1200px;
             margin: 50px auto;
@@ -55,7 +58,6 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-
         .services, .service {
             display: flex;
             flex-wrap: wrap;
@@ -98,6 +100,7 @@
             display: block;
         }
 
+        /* إضافة فواصل و تفاعلات عند الانتقال */
         .footer {
             background-color: #1a1a2e;
             padding: 40px 0;
@@ -112,7 +115,7 @@
             font-weight: bold;
         }
 
-        /* إضافة التنقل التفاعلي في القائمة */
+        /* التنقل التفاعلي */
         .social-links a {
             display: inline-block;
             margin: 10px;
@@ -163,40 +166,44 @@
         </nav>
     </header>
 
+    <!-- الصفحة الرئيسية -->
     <div id="home" class="container">
         <h2 data-aos="fade-up">مرحبًا بك في SMM NPANEL</h2>
         <p data-aos="fade-up">أفضل خدمات التسويق الإلكتروني لزيادة التفاعل وتعزيز الانتشار.</p>
         
         <div class="services">
-            <div class="service" data-aos="zoom-in">
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
                 <i class="fas fa-bolt"></i>
                 <h3>تعزيز التفاعل</h3>
                 <div class="service-description">نساعدك في تحقيق أعلى مستويات التفاعل عبر استراتيجيات متقدمة.</div>
             </div>
-            <div class="service" data-aos="zoom-in">
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#growth'">
                 <i class="fas fa-chart-line"></i>
                 <h3>استراتيجيات النمو</h3>
                 <div class="service-description">نوفر لك استراتيجيات وخططًا مخصصة لمساعدتك على تنمية حسابك بسرعة وكفاءة.</div>
             </div>
-            <div class="service" data-aos="zoom-in">
+            <div class="service" data-aos="zoom-in" onclick="window.location.href='#targeting'">
                 <i class="fas fa-bullseye"></i>
                 <h3>استهداف إعلاني</h3>
                 <div class="service-description">نساعدك على الوصول إلى جمهورك المستهدف بأفضل الطرق وأكثرها فعالية.</div>
             </div>
-            <div class="service" data-aos="zoom-in">
-                <i class="fas fa-shopping-cart"></i>
-                <h3>إدارة الحملات</h3>
-                <div class="service-description">نقدم لك إدارة شاملة لحملاتك التسويقية لتحقيق أفضل النتائج.</div>
-            </div>
-            <div class="service" data-aos="zoom-in">
-                <i class="fas fa-star"></i>
-                <h3>تحسين العلامة التجارية</h3>
-                <div class="service-description">نساعدك على بناء هوية قوية لعلامتك التجارية وجذب الجمهور المناسب.</div>
-            </div>
         </div>
-
     </div>
 
+    <!-- صفحة الخدمات -->
+    <div id="services" class="container">
+        <h2>تفاصيل الخدمات</h2>
+        <div id="growth" class="service" data-aos="zoom-in">
+            <h3>استراتيجيات النمو</h3>
+            <p>نقدم لك استراتيجيات مخصصة وخططًا فعالة لزيادة النمو بشكل سريع وملحوظ. نوفر لك كل الأدوات والموارد التي تحتاجها لتحقيق نجاحك.</p>
+        </div>
+        <div id="targeting" class="service" data-aos="zoom-in">
+            <h3>استهداف إعلاني</h3>
+            <p>نساعدك في تحديد وتحليل جمهورك المستهدف بدقة عبر أحدث الأدوات الإعلانية لتحقيق أقصى استفادة من الحملات الإعلانية.</p>
+        </div>
+    </div>
+
+    <!-- صفحة الاتصال -->
     <div id="contact" class="footer">
         <h3>اتصل بنا</h3>
         <div class="social-links">
