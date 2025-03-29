@@ -62,7 +62,7 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
-        .services, .service {
+        .services {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -77,6 +77,9 @@
             transition: transform 0.3s, background 0.3s;
             text-align: center;
             cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .service:hover {
             transform: scale(1.05);
@@ -85,6 +88,14 @@
         .service i {
             font-size: 3em;
             color: #FFD700;
+            margin-bottom: 15px;
+        }
+        .service h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .service p {
+            font-size: 1em;
             margin-bottom: 15px;
         }
         .footer {
@@ -138,17 +149,19 @@
 
     <div id="services" class="container">
         <h2>Our Services</h2>
-        <div class="service">
-            <h3>Social Media Growth</h3>
-            <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
-        </div>
-        <div class="service">
-            <h3>Targeted Advertising</h3>
-            <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
-        </div>
-        <div class="service">
-            <h3>Creative Branding</h3>
-            <p>We develop unique branding solutions to establish a powerful market presence.</p>
+        <div class="services">
+            <div class="service">
+                <h3>Social Media Growth</h3>
+                <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
+            </div>
+            <div class="service">
+                <h3>Targeted Advertising</h3>
+                <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
+            </div>
+            <div class="service">
+                <h3>Creative Branding</h3>
+                <p>We develop unique branding solutions to establish a powerful market presence.</p>
+            </div>
         </div>
     </div>
 
