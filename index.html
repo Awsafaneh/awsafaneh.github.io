@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Npanel Agency offers premium digital marketing services, including social media growth, advertising, and creative branding solutions.">
+    <meta name="keywords" content="digital marketing, social media, branding, advertising, marketing agency, premium services">
+    <meta name="author" content="Aws Afaneh">
     <title>Npanel Agency - Digital Marketing Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -20,7 +23,7 @@
 
         header {
             background-color: #1a1a2e;
-            padding: 50px 0;
+            padding: 20px 0;
             color: #fff;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -44,29 +47,75 @@
             font-family: 'Raleway', sans-serif;
         }
 
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a2e;
+            padding: 15px 20px;
+            position: relative;
+        }
+
         nav ul {
             list-style: none;
-            padding: 0;
             display: flex;
-            justify-content: center;
-            margin-top: 20px;
+            padding: 0;
+            margin: 0;
         }
 
         nav ul li {
-            margin: 0 25px;
+            margin-right: 25px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: 1.2em;
             transition: 0.3s;
             letter-spacing: 1px;
-            font-family: 'Poppins', sans-serif;
         }
 
         nav ul li a:hover {
             color: #FFD700;
+        }
+
+        /* Menu Icon */
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #1a1a2e;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            nav ul li {
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            nav ul li a {
+                font-size: 1.5em;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
         }
 
         .container {
@@ -115,7 +164,6 @@
             margin-bottom: 15px;
             font-weight: 600;
             color: #333;
-            font-family: 'Raleway', sans-serif;
         }
 
         .service p {
@@ -163,20 +211,6 @@
             color: #fff;
         }
 
-        h2 {
-            font-size: 3em;
-            color: #1a1a2e;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-
-        .services h2 {
-            margin-bottom: 30px;
-            color: #333;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        /* Responsive buttons */
         .cta-btn {
             background-color: #FFD700;
             color: #1a1a2e;
@@ -200,20 +234,20 @@
             outline: none;
         }
 
-        /* Scroll to section */
-        .cta-btn-container {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        /* Responsiveness */
         @media (max-width: 1024px) {
-            header h1 {
-                font-size: 2.5em;
+            .service {
+                width: 45%;
             }
 
-            .container {
-                padding: 30px;
+            .cta-btn {
+                font-size: 1.1em;
+                padding: 12px 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
             }
 
             .services {
@@ -223,34 +257,10 @@
 
             .service {
                 width: 80%;
-                margin-bottom: 20px;
             }
 
-            nav ul li {
-                margin: 0 15px;
-            }
-
-            nav ul li a {
-                font-size: 1.1em;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2em;
-            }
-
-            .footer {
-                font-size: 1.1em;
-            }
-
-            .service {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            h2 {
-                font-size: 2.5em;
+            .cta-btn {
+                font-size: 1.2em;
             }
 
             .founder {
@@ -269,27 +279,29 @@
 
             .service {
                 width: 100%;
-                margin-bottom: 20px;
             }
 
-            h2 {
-                font-size: 2em;
+            .cta-btn {
+                font-size: 1.1em;
             }
         }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Npanel Agency</h1>
         <div class="founder">CEO & Founder: Aws Afaneh</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <div id="home" class="container">
         <h2>Welcome to Npanel Agency</h2>
@@ -352,6 +364,11 @@
             duration: 1000,
             easing: 'ease-in-out',
         });
+
+        function toggleMenu() {
+            var navList = document.getElementById("nav-list");
+            navList.classList.toggle("show");
+        }
     </script>
 </body>
 </html>
