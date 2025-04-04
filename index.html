@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -14,11 +15,10 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            overflow-x: hidden;
         }
         header {
             background-color: #1a1a2e;
-            padding: 20px 0;
+            padding: 20px;
             color: #fff;
             text-align: center;
             position: fixed;
@@ -26,90 +26,105 @@
             top: 0;
             left: 0;
             z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .menu {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background: #1a1a2e;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
         }
-        .menu a {
-            color: #FFD700;
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .navbar ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+        .navbar ul li a {
+            color: #fff;
             text-decoration: none;
             font-size: 1.2em;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: #333;
             padding: 10px;
+            border-radius: 5px;
+            top: 30px;
+            left: 0;
+            width: 200px;
+        }
+        .dropdown a {
             display: block;
+            padding: 8px;
         }
-        .menu a:hover {
-            color: #fff;
-        }
-        .menu-icon {
-            cursor: pointer;
-            font-size: 1.8em;
+        .navbar ul li:hover .dropdown {
+            display: block;
         }
         .container {
             max-width: 1200px;
-            margin: 100px auto 50px;
+            margin: 100px auto;
             padding: 40px;
             background: #fff;
             border-radius: 15px;
-            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
             text-align: left;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
         }
         .testimonial {
-            background: #fff;
+            background: #f9f9f9;
             padding: 20px;
-            border-radius: 10px;
-            margin: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            border-left: 5px solid #FFD700;
         }
         .footer {
             background-color: #1a1a2e;
-            padding: 30px 0;
+            padding: 50px 0;
             color: #fff;
             text-align: center;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Npanel Agency</h1>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
+        <div class="navbar">
+            <h1>Npanel Agency</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#">Services</a>
+                    <div class="dropdown">
+                        <a href="#marketing">Marketing</a>
+                        <a href="#seo">SEO Optimization</a>
+                        <a href="#branding">Branding</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <nav class="menu" id="menu">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
     </header>
+    
     <div id="home" class="container">
         <h2>Welcome to Npanel Agency</h2>
         <p>Your ultimate destination for professional digital marketing services.</p>
     </div>
-    <div id="services" class="container">
-        <h2>Our Services</h2>
+
+    <div class="container" id="testimonials">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial">
+            <p>"Great service! Helped boost my business in no time." - John Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"Professional team, amazing results! Highly recommended." - Sarah Smith</p>
+        </div>
     </div>
-    <div id="testimonials" class="container">
-        <h2>Customer Testimonials</h2>
-        <div class="testimonial"> <p>"Excellent service! Highly recommended." - John Doe</p> </div>
-        <div class="testimonial"> <p>"احترافية كبيرة وخدمة مميزة!" - محمد علي</p> </div>
-    </div>
+
     <div id="contact" class="footer">
         <h3>Contact Us</h3>
+        <p>Get in touch for premium marketing solutions.</p>
     </div>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("menu");
-            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
 </body>
 </html>
