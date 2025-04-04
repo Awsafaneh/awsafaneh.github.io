@@ -232,53 +232,8 @@
             outline: none;
         }
 
-        .testimonials {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin: 50px 0;
-        }
-
-        .testimonial {
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            width: 280px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .testimonial i {
-            font-size: 2.5em;
-            color: #FFD700;
-            margin-bottom: 15px;
-        }
-
-        .testimonial p {
-            font-size: 1.2em;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        .testimonial .name {
-            font-weight: bold;
-            font-size: 1.4em;
-        }
-
-        .testimonial .position {
-            font-size: 1.1em;
-            color: #666;
-        }
-
-        .testimonial:hover {
-            transform: scale(1.05);
-        }
-
         @media (max-width: 1024px) {
-            .testimonial {
+            .service {
                 width: 45%;
             }
 
@@ -293,12 +248,12 @@
                 font-size: 2.5em;
             }
 
-            .testimonials {
+            .services {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .testimonial {
+            .service {
                 width: 80%;
             }
 
@@ -320,13 +275,19 @@
                 padding: 20px;
             }
 
-            .testimonial {
+            .service {
                 width: 100%;
             }
 
             .cta-btn {
                 font-size: 1.1em;
             }
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
         }
     </style>
 </head>
@@ -341,7 +302,6 @@
         <ul id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -372,27 +332,20 @@
         </div>
     </div>
 
-    <!-- Testimonials Section -->
-    <div id="testimonials" class="container">
-        <h2>Client Testimonials</h2>
-        <div class="testimonials">
-            <div class="testimonial" data-aos="fade-up">
-                <i class="fas fa-quote-left"></i>
-                <p>"Npanel Agency has truly transformed our brand. Their team understands our vision and creates exceptional marketing strategies that really work!"</p>
-                <div class="name">John Doe</div>
-                <div class="position">CEO, ABC Corp</div>
+    <div id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service" data-aos="fade-up">
+                <h3>Social Media Growth</h3>
+                <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
             </div>
-            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-quote-left"></i>
-                <p>"لقد أضفتم لمسة رائعة لعلامتنا التجارية. شكراً لكم على الاهتمام الكبير والإبداع في كل تفاصيل الحملة!"</p>
-                <div class="name">أحمد الفندي</div>
-                <div class="position">مدير التسويق، شركة XYZ</div>
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
+                <h3>Targeted Advertising</h3>
+                <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
             </div>
-            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-quote-left"></i>
-                <p>"Amazing team with creative and effective strategies. Highly recommend Npanel Agency!"</p>
-                <div class="name">Sarah Lee</div>
-                <div class="position">Marketing Director, GlobalTech</div>
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
+                <h3>Creative Branding</h3>
+                <p>We develop unique branding solutions to establish a powerful market presence.</p>
             </div>
         </div>
         <div class="cta-btn-container">
@@ -405,4 +358,21 @@
         <p>Get in touch for premium marketing solutions.</p>
         <div class="social-icons">
             <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-           
+            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+
+        function toggleMenu() {
+            var navList = document.getElementById("nav-list");
+            navList.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
