@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Npanel Agency - Your destination for professional digital marketing services.">
     <title>Npanel Agency - Digital Marketing Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        /* General Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap');
+
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -21,8 +21,8 @@
         header {
             background-color: #1a1a2e;
             padding: 50px 0;
+            color: #fff;
             text-align: center;
-            color: white;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
@@ -30,17 +30,21 @@
             font-size: 3.5em;
             margin: 0;
             text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Raleway', sans-serif;
         }
 
         header .founder {
             font-size: 1.4em;
+            font-weight: 600;
             margin-top: 10px;
             color: #FFD700;
             text-transform: uppercase;
-            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
         }
 
-        header nav ul {
+        nav ul {
             list-style: none;
             padding: 0;
             display: flex;
@@ -48,18 +52,20 @@
             margin-top: 20px;
         }
 
-        header nav ul li {
+        nav ul li {
             margin: 0 25px;
         }
 
-        header nav ul li a {
-            color: white;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
             font-size: 1.3em;
             transition: 0.3s;
+            letter-spacing: 1px;
+            font-family: 'Poppins', sans-serif;
         }
 
-        header nav ul li a:hover {
+        nav ul li a:hover {
             color: #FFD700;
         }
 
@@ -71,13 +77,6 @@
             border-radius: 15px;
             box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
             text-align: left;
-        }
-
-        h2 {
-            font-size: 3em;
-            color: #1a1a2e;
-            font-weight: 600;
-            margin-bottom: 40px;
         }
 
         .services {
@@ -115,6 +114,8 @@
             font-size: 1.6em;
             margin-bottom: 15px;
             font-weight: 600;
+            color: #333;
+            font-family: 'Raleway', sans-serif;
         }
 
         .service p {
@@ -126,7 +127,7 @@
         .footer {
             background-color: #1a1a2e;
             padding: 50px 0;
-            color: white;
+            color: #fff;
             text-align: center;
             font-size: 1.2em;
             box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
@@ -162,7 +163,20 @@
             color: #fff;
         }
 
-        /* Responsive Styles */
+        h2 {
+            font-size: 3em;
+            color: #1a1a2e;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .services h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        /* Responsiveness */
         @media (max-width: 1024px) {
             header h1 {
                 font-size: 2.5em;
@@ -182,8 +196,12 @@
                 margin-bottom: 20px;
             }
 
-            header nav ul li {
+            nav ul li {
                 margin: 0 15px;
+            }
+
+            nav ul li a {
+                font-size: 1.1em;
             }
         }
 
@@ -228,27 +246,8 @@
                 font-size: 2em;
             }
         }
-
-        /* Scroll to top button */
-        #scrollTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #1a1a2e;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            display: none;
-            cursor: pointer;
-            font-size: 2em;
-        }
-
-        #scrollTop:hover {
-            background-color: #FFD700;
-        }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Npanel Agency</h1>
@@ -302,4 +301,21 @@
         </div>
     </div>
 
-    <div id="contact" class
+    <div id="contact" class="footer">
+        <h3>Contact Us</h3>
+        <p>Get in touch for premium marketing solutions.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
+</body>
+</html>
