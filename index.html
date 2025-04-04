@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        /* Simplified CSS for testing */
+        /* General Styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -23,12 +23,21 @@
             padding: 50px 0;
             text-align: center;
             color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             font-size: 3.5em;
             margin: 0;
             text-transform: uppercase;
+        }
+
+        header .founder {
+            font-size: 1.4em;
+            margin-top: 10px;
+            color: #FFD700;
+            text-transform: uppercase;
+            font-weight: 600;
         }
 
         header nav ul {
@@ -47,6 +56,11 @@
             color: white;
             text-decoration: none;
             font-size: 1.3em;
+            transition: 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #FFD700;
         }
 
         .container {
@@ -56,6 +70,22 @@
             background: #fff;
             border-radius: 15px;
             box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #1a1a2e;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 50px;
         }
 
         .service {
@@ -63,11 +93,11 @@
             padding: 30px;
             border-radius: 15px;
             width: 280px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background 0.3s;
             text-align: center;
-            margin: 20px;
             cursor: pointer;
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #333;
         }
 
         .service:hover {
@@ -75,109 +105,57 @@
             background-color: #f0f0f0;
         }
 
+        .service i {
+            font-size: 3.5em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
         .footer {
             background-color: #1a1a2e;
             padding: 50px 0;
             color: white;
             text-align: center;
+            font-size: 1.2em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .footer a {
             color: #FFD700;
             text-decoration: none;
+            font-weight: bold;
             font-size: 1.4em;
             margin: 15px;
+            display: inline-block;
+            transition: color 0.3s;
         }
 
-        /* Scroll to top button */
-        #scrollTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #1a1a2e;
-            color: white;
-            padding: 15px;
-            border-radius: 50%;
-            display: none;
-            cursor: pointer;
+        .footer a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons a {
             font-size: 2em;
+            margin: 0 20px;
+            color: #FFD700;
+            transition: color 0.3s;
         }
 
-        #scrollTop:hover {
-            background-color: #FFD700;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.2em;
-            }
-
-            .container {
-                padding: 30px;
-            }
-
-            .service {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Npanel Agency</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="home" class="container">
-        <h2>Welcome to Npanel Agency</h2>
-        <p>Your ultimate destination for professional digital marketing services.</p>
-    </div>
-
-    <div id="services" class="container">
-        <h2>Our Services</h2>
-        <div class="service" data-aos="fade-up">
-            <h3>Social Media Growth</h3>
-            <p>We help your brand gain visibility through tailored strategies.</p>
-        </div>
-        <div class="service" data-aos="fade-up" data-aos-delay="100">
-            <h3>Targeted Advertising</h3>
-            <p>Our team creates precise ad strategies to maximize your ROI.</p>
-        </div>
-    </div>
-
-    <div id="contact" class="footer">
-        <h3>Contact Us</h3>
-        <p>Get in touch for premium marketing solutions.</p>
-        <div class="social-icons">
-            <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-        </div>
-    </div>
-
-    <button id="scrollTop" onclick="scrollToTop()">&#8679;</button>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-        });
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        window.onscroll = function () {
-            document.getElementById("scrollTop").style.display = window.scrollY > 300 ? "block" : "none";
-        };
-    </script>
-</body>
-
-</html>
+        .footer .
