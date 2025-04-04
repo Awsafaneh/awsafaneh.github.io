@@ -158,4 +158,148 @@
             transition: color 0.3s;
         }
 
-        .footer .
+        .footer .social-icons a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            header nav ul li {
+                margin: 0 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .footer {
+                font-size: 1.1em;
+            }
+
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            .founder {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .service {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+        }
+
+        /* Scroll to top button */
+        #scrollTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1a1a2e;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            display: none;
+            cursor: pointer;
+            font-size: 2em;
+        }
+
+        #scrollTop:hover {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Npanel Agency</h1>
+        <div class="founder">CEO & Founder: Aws Afaneh</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="container">
+        <h2>Welcome to Npanel Agency</h2>
+        <p>Your ultimate destination for professional digital marketing services.</p>
+        <div class="services">
+            <div class="service" data-aos="fade-up">
+                <i class="fas fa-camera"></i>
+                <h3>Photography & Media</h3>
+                <p>Our dedicated media team captures high-quality visuals to enhance your brand identity.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Advertising & Promotions</h3>
+                <p>We design strategic ad campaigns to maximize your brand reach and audience engagement.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics & Optimization</h3>
+                <p>Our experts analyze performance data to refine your marketing strategies for better results.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service" data-aos="fade-up">
+                <h3>Social Media Growth</h3>
+                <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
+                <h3>Targeted Advertising</h3>
+                <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
+                <h3>Creative Branding</h3>
+                <p>We develop unique branding solutions to establish a powerful market presence.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class
