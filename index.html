@@ -176,6 +176,36 @@
             font-family: 'Raleway', sans-serif;
         }
 
+        /* Responsive buttons */
+        .cta-btn {
+            background-color: #FFD700;
+            color: #1a1a2e;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1a1a2e;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .cta-btn:focus {
+            outline: none;
+        }
+
+        /* Scroll to section */
+        .cta-btn-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
         /* Responsiveness */
         @media (max-width: 1024px) {
             header h1 {
@@ -281,6 +311,9 @@
                 <p>Our experts analyze performance data to refine your marketing strategies for better results.</p>
             </div>
         </div>
+        <div class="cta-btn-container">
+            <button class="cta-btn" onclick="window.location.href='#services'">Explore Our Services</button>
+        </div>
     </div>
 
     <div id="services" class="container">
@@ -298,6 +331,9 @@
                 <h3>Creative Branding</h3>
                 <p>We develop unique branding solutions to establish a powerful market presence.</p>
             </div>
+        </div>
+        <div class="cta-btn-container">
+            <button class="cta-btn" onclick="window.location.href='#contact'">Contact Us</button>
         </div>
     </div>
 
