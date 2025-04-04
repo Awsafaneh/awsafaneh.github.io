@@ -9,14 +9,12 @@
     <title>Npanel Agency - Digital Marketing Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap');
-
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            overflow-x: hidden;
             background-color: #f4f4f4;
             color: #333;
         }
@@ -234,8 +232,53 @@
             outline: none;
         }
 
+        .testimonials {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .testimonial i {
+            font-size: 2.5em;
+            color: #FFD700;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial .name {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+        .testimonial .position {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+
         @media (max-width: 1024px) {
-            .service {
+            .testimonial {
                 width: 45%;
             }
 
@@ -250,12 +293,12 @@
                 font-size: 2.5em;
             }
 
-            .services {
+            .testimonials {
                 flex-direction: column;
                 align-items: center;
             }
 
-            .service {
+            .testimonial {
                 width: 80%;
             }
 
@@ -277,7 +320,7 @@
                 padding: 20px;
             }
 
-            .service {
+            .testimonial {
                 width: 100%;
             }
 
@@ -285,7 +328,6 @@
                 font-size: 1.1em;
             }
         }
-
     </style>
 </head>
 <body>
@@ -299,6 +341,7 @@
         <ul id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -306,6 +349,7 @@
     <div id="home" class="container">
         <h2>Welcome to Npanel Agency</h2>
         <p>Your ultimate destination for professional digital marketing services.</p>
+        <img src="https://via.placeholder.com/1200x500" alt="Agency Image" class="image">
         <div class="services">
             <div class="service" data-aos="fade-up">
                 <i class="fas fa-camera"></i>
@@ -328,20 +372,27 @@
         </div>
     </div>
 
-    <div id="services" class="container">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service" data-aos="fade-up">
-                <h3>Social Media Growth</h3>
-                <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="container">
+        <h2>Client Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial" data-aos="fade-up">
+                <i class="fas fa-quote-left"></i>
+                <p>"Npanel Agency has truly transformed our brand. Their team understands our vision and creates exceptional marketing strategies that really work!"</p>
+                <div class="name">John Doe</div>
+                <div class="position">CEO, ABC Corp</div>
             </div>
-            <div class="service" data-aos="fade-up" data-aos-delay="100">
-                <h3>Targeted Advertising</h3>
-                <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-quote-left"></i>
+                <p>"لقد أضفتم لمسة رائعة لعلامتنا التجارية. شكراً لكم على الاهتمام الكبير والإبداع في كل تفاصيل الحملة!"</p>
+                <div class="name">أحمد الفندي</div>
+                <div class="position">مدير التسويق، شركة XYZ</div>
             </div>
-            <div class="service" data-aos="fade-up" data-aos-delay="200">
-                <h3>Creative Branding</h3>
-                <p>We develop unique branding solutions to establish a powerful market presence.</p>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-quote-left"></i>
+                <p>"Amazing team with creative and effective strategies. Highly recommend Npanel Agency!"</p>
+                <div class="name">Sarah Lee</div>
+                <div class="position">Marketing Director, GlobalTech</div>
             </div>
         </div>
         <div class="cta-btn-container">
@@ -354,21 +405,4 @@
         <p>Get in touch for premium marketing solutions.</p>
         <div class="social-icons">
             <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-        });
-
-        function toggleMenu() {
-            var navList = document.getElementById("nav-list");
-            navList.classList.toggle("show");
-        }
-    </script>
-</body>
-</html>
+           
