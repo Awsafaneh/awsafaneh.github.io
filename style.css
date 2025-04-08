@@ -1,53 +1,91 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #121212;
-    color: #fff;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+header, section, footer {
+    margin-bottom: 30px;
+}
+
+.language-switcher {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Services Section */
+#services h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-header {
-    background: linear-gradient(135deg, #ff4b2b, #ff416c);
-    padding: 50px 0;
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background: #fff;
-    color: #ff416c;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+#services li {
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
-section {
-    padding: 50px 20px;
+/* Contact Section */
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+#contact-info {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
-.project {
-    background: #1e1e1e;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
+/* Footer */
 footer {
-    background: #1e1e1e;
-    padding: 20px;
-}
-
-a {
-    color: #ff416c;
-    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
 }
