@@ -1,45 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+document.getElementById('lang-ar').addEventListener('click', function() {
+    document.documentElement.lang = 'ar';
+    document.getElementById('main-title').textContent = 'مرحبًا بك في SMMNPAN';
+    document.getElementById('description').textContent = 'نحن نقدم خدمات تسويق رقمي مبتكرة تساعدك على الوصول إلى جمهورك المستهدف.';
+    document.getElementById('service1').textContent = 'إدارة حسابات السوشيال ميديا';
+    document.getElementById('service2').textContent = 'تحسين محركات البحث (SEO)';
+    document.getElementById('service3').textContent = 'إعلانات ممولة';
+    document.getElementById('service4').textContent = 'تصميم محتوى';
+    document.getElementById('service5').textContent = 'تطوير مواقع';
+    document.getElementById('contact-info').textContent = 'للتواصل معنا، يمكنك استخدام البريد الإلكتروني أو عبر WhatsApp.';
+    document.querySelector('footer p').textContent = '© 2025 SMMNPAN. جميع الحقوق محفوظة.';
+});
 
-// صفحات الموقع
-import HomePage from "./pages/HomePage";
-import ServicesPage from "./pages/ServicesPage";
-import PortfolioPage from "./pages/PortfolioPage";
-import ContactPage from "./pages/ContactPage";
-import ChatBot from "./components/ChatBot";
-
-function App() {
-  const [isBotActive, setIsBotActive] = useState(false);
-
-  useEffect(() => {
-    // تنشيط الشات بوت بمجرد تحميل الصفحة
-    setIsBotActive(true);
-  }, []);
-
-  return (
-    <Router>
-      <div className="App">
-        <nav>
-          <h1>Aws Afaneh</h1>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/services" component={ServicesPage} />
-          <Route path="/portfolio" component={PortfolioPage} />
-          <Route path="/contact" component={ContactPage} />
-        </Switch>
-
-        {isBotActive && <ChatBot />}
-      </div>
-    </Router>
-  );
-}
-
-export default App;
+document.getElementById('lang-en').addEventListener('click', function() {
+    document.documentElement.lang = 'en';
+    document.getElementById('main-title').textContent = 'Welcome to SMMNPAN';
+    document.getElementById('description').textContent = 'We offer innovative digital marketing services to help you reach your target audience.';
+    document.getElementById('service1').textContent = 'Social Media Management';
+    document.getElementById('service2').textContent = 'Search Engine Optimization (SEO)';
+    document.getElementById('service3').textContent = 'Paid Ads';
+    document.getElementById('service4').textContent = 'Content Design';
+    document.getElementById('service5').textContent = 'Website Development';
+    document.getElementById('contact-info').textContent = 'To contact us, you can use email or WhatsApp.';
+    document.querySelector('footer p').textContent = '© 2025 SMMNPAN. All rights reserved.';
+});
