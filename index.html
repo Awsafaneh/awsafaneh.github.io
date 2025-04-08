@@ -3,66 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMMNPAN | Digital Marketing Agency</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Npanel Agency offers premium digital marketing services, including social media growth, advertising, and creative branding solutions.">
+    <meta name="keywords" content="digital marketing, social media, branding, advertising, marketing agency, premium services">
+    <meta name="author" content="Aws Afaneh">
+    <title>Npanel Agency - Digital Marketing Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a1a2e;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        header .founder {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #FFD700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a2e;
+            padding: 15px 20px;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Menu Icon */
+        .menu-icon {
+            display: none;
+            font-size: 2em;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #1a1a2e;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            nav ul li {
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            nav ul li a {
+                font-size: 1.5em;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .service {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            width: 280px;
+            transition: transform 0.3s, background 0.3s;
+            text-align: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0;
+        }
+
+        .service i {
+            font-size: 3.5em;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .service p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .footer {
+            background-color: #1a1a2e;
+            padding: 50px 0;
+            color: #fff;
+            text-align: center;
+            font-size: 1.2em;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin: 15px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons a {
+            font-size: 2em;
+            margin: 0 20px;
+            color: #FFD700;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #fff;
+        }
+
+        .cta-btn {
+            background-color: #FFD700;
+            color: #1a1a2e;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #1a1a2e;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .cta-btn:focus {
+            outline: none;
+        }
+
+        @media (max-width: 1024px) {
+            .service {
+                width: 45%;
+            }
+
+            .cta-btn {
+                font-size: 1.1em;
+                padding: 12px 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service {
+                width: 80%;
+            }
+
+            .cta-btn {
+                font-size: 1.2em;
+            }
+
+            .founder {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .service {
+                width: 100%;
+            }
+
+            .cta-btn {
+                font-size: 1.1em;
+            }
+        }
+
+    </style>
 </head>
 <body>
-
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button id="lang-ar">Arabic</button>
-        <button id="lang-en">English</button>
-    </div>
-
-    <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1 id="main-title">Welcome to SMMNPAN</h1>
-            <p id="description">We offer innovative digital marketing services to help you reach your target audience.</p>
-            <a href="#services" class="cta-button" id="cta-button">Get Started</a>
-        </div>
+        <h1>Npanel Agency</h1>
+        <div class="founder">CEO & Founder: Aws Afaneh</div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services" class="container">
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="container">
+        <h2>Welcome to Npanel Agency</h2>
+        <p>Your ultimate destination for professional digital marketing services.</p>
+        <div class="services">
+            <div class="service" data-aos="fade-up">
+                <i class="fas fa-camera"></i>
+                <h3>Photography & Media</h3>
+                <p>Our dedicated media team captures high-quality visuals to enhance your brand identity.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Advertising & Promotions</h3>
+                <p>We design strategic ad campaigns to maximize your brand reach and audience engagement.</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-chart-line"></i>
+                <h3>Analytics & Optimization</h3>
+                <p>Our experts analyze performance data to refine your marketing strategies for better results.</p>
+            </div>
+        </div>
+        <div class="cta-btn-container">
+            <button class="cta-btn" onclick="window.location.href='#services'">Explore Our Services</button>
+        </div>
+    </div>
+
+    <div id="services" class="container">
         <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Social Media Management</h3>
-                <p>We help you manage your social media accounts to grow your online presence.</p>
+        <div class="services">
+            <div class="service" data-aos="fade-up">
+                <h3>Social Media Growth</h3>
+                <p>We help your brand gain visibility and engagement through tailored social media strategies.</p>
             </div>
-            <div class="service-card">
-                <h3>SEO</h3>
-                <p>Improve your website's visibility and rank higher on search engines.</p>
+            <div class="service" data-aos="fade-up" data-aos-delay="100">
+                <h3>Targeted Advertising</h3>
+                <p>Our team creates precise ad targeting strategies to maximize your ROI and reach.</p>
             </div>
-            <div class="service-card">
-                <h3>Paid Ads</h3>
-                <p>Maximize your reach with targeted paid advertising campaigns.</p>
-            </div>
-            <div class="service-card">
-                <h3>Content Design</h3>
-                <p>Create compelling content that drives engagement and brand awareness.</p>
-            </div>
-            <div class="service-card">
-                <h3>Website Development</h3>
-                <p>We design and develop responsive and visually appealing websites.</p>
+            <div class="service" data-aos="fade-up" data-aos-delay="200">
+                <h3>Creative Branding</h3>
+                <p>We develop unique branding solutions to establish a powerful market presence.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p id="contact-info">To contact us, you can use email or WhatsApp.</p>
-        <a href="mailto:info@smmnpan.online" class="cta-button">Email Us</a>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2025 SMMNPAN. All rights reserved.</p>
+        <div class="cta-btn-container">
+            <button class="cta-btn" onclick="window.location.href='#contact'">Contact Us</button>
         </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+    <div id="contact" class="footer">
+        <h3>Contact Us</h3>
+        <p>Get in touch for premium marketing solutions.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/447308586293" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.instagram.com/_awsafaneh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+
+        function toggleMenu() {
+            var navList = document.getElementById("nav-list");
+            navList.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
