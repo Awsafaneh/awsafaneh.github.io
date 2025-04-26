@@ -1,78 +1,46 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الكشافات - مؤسسة رواد الأردن التجارية</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Cairo', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #004d99;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: center;
-      background-color: #333;
-      padding: 10px;
-    }
-
-    .navbar a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #004d99;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المنتج - كشاف 100W</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="رواد الأردن التجارية" width="150">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="store.html">منتجاتنا</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                    <li><a href="cart.html">عربة التسوق</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>الكشافات - مؤسسة رواد الأردن التجارية</h1>
-  </header>
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-info">
+                <img src="images/product1.jpg" alt="كشاف 100W" width="300">
+                <div class="details">
+                    <h2>كشاف 100W</h2>
+                    <p>كشاف LED عالي الأداء مع ضمان 3 سنوات. مثالي للاستخدام في الأماكن المفتوحة والمنازل والمكاتب.</p>
+                    <p class="price">دينار 25.00</p>
+                    <button class="btn">إضافة إلى العربة</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="navbar">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">من نحن</a>
-    <a href="products.html">منتجاتنا</a>
-    <a href="services.html">خدماتنا</a>
-    <a href="contact.html">تواصل معنا</a>
-  </div>
-
-  <div class="section">
-    <h2>الكشافات</h2>
-    <p>نقدم لكم مجموعة من الكشافات عالية الجودة التي تضيف لمسة مميزة للمساحات الداخلية والخارجية.</p>
-  </div>
-
-  <footer>
-    <p>© 2025 جميع الحقوق محفوظة - مؤسسة رواد الأردن التجارية</p>
-  </footer>
-
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
 </body>
 </html>
