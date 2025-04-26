@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤسسة رواد الأردن التجارية</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مؤسسة رواد الأردن التجارية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-    <h1>مؤسسة رواد الأردن التجارية</h1>
+  <div class="container">
+    <h1>رواد الأردن التجارية</h1>
     <nav>
-        <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="products.html">منتجاتنا</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
-            <li class="dropdown">
-                <a href="#">روابط التواصل ▼</a>
-                <ul class="dropdown-content">
-                    <li><a href="https://facebook.com" target="_blank">فيسبوك</a></li>
-                    <li><a href="https://instagram.com" target="_blank">انستغرام</a></li>
-                </ul>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#products">منتجاتنا</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
 
-<main>
-    <section class="hero">
-        <h2>نرحب بكم في مؤسسة رواد الأردن التجارية</h2>
-        <p>خبرة وجودة في مجال المعدات الكهربائية والصناعية.</p>
-    </section>
-</main>
+<section id="home" class="hero">
+  <div class="container">
+    <h2>نرتقي بالجودة والتميز</h2>
+    <p>خبرة عريقة في مجال المعدات الكهربائية والصناعية.</p>
+    <a href="#contact" class="btn">تواصل معنا</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <h2>من نحن</h2>
+    <p>مؤسسة رواد الأردن التجارية تأسست لتقديم حلول كهربائية وصناعية عالية الجودة في الأردن والعالم العربي. نؤمن أن الجودة والالتزام هما سر نجاحنا.</p>
+  </div>
+</section>
+
+<section id="products" class="section dark">
+  <div class="container">
+    <h2>منتجاتنا</h2>
+    <ul class="products">
+      <li>كوابل كهربائية</li>
+      <li>قواطع ومفاتيح أمان</li>
+      <li>معدات صناعية متخصصة</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <h2>خدماتنا</h2>
+    <ul class="services">
+      <li>استيراد معدات كهربائية</li>
+      <li>استشارات هندسية كهربائية</li>
+      <li>صيانة المعدات الصناعية</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="section dark">
+  <div class="container">
+    <h2>تواصل معنا</h2>
+    <p>📍 عمان - الأردن</p>
+    <p>📞  +962 7XXXXXXXX</p>
+    <p>✉️ info@rawadjo.com</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">فيسبوك</a> |
+      <a href="https://instagram.com" target="_blank">انستغرام</a>
+    </div>
+  </div>
+</section>
+
+<a href="https://wa.me/9627XXXXXXXX" class="whatsapp" target="_blank">تواصل واتساب</a>
 
 <footer>
-    <p>جميع الحقوق محفوظة © 2025 مؤسسة رواد الأردن التجارية</p>
+  <div class="container">
+    <p>© 2025 جميع الحقوق محفوظة - رواد الأردن التجارية</p>
+  </div>
 </footer>
 
 </body>
