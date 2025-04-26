@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>إهداء إلى المهندس عبادة عبد العال</title>
+  <title>مؤسسة رواد الأردن التجارية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Cairo', sans-serif;
       background-color: #f4f4f9;
       color: #333;
       margin: 0;
@@ -24,33 +26,86 @@
       font-size: 36px;
     }
 
-    .content {
-      margin: 30px auto;
-      width: 80%;
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px;
     }
 
-    .content h2 {
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #00b5e2;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
       color: #004d99;
-      font-size: 28px;
       margin-bottom: 20px;
     }
 
-    .content p {
+    .content {
       font-size: 18px;
       line-height: 1.6;
-      text-align: justify;
       margin-bottom: 20px;
     }
 
-    .content .note {
-      font-style: italic;
-      color: #555;
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       margin-top: 30px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      color: #004d99;
+      margin-top: 15px;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #00b5e2;
     }
 
     footer {
@@ -62,30 +117,53 @@
       width: 100%;
       bottom: 0;
     }
+
+    footer p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>إهداء إلى المهندس عبادة عبد العال</h1>
+    <h1>مؤسسة رواد الأردن التجارية</h1>
   </header>
 
-  <div class="content">
-    <h2>مقدمة</h2>
-    <p>إلى المهندس العبقري عبادة عبد العال، نتوجه إليك بأسمى آيات الشكر والتقدير على جهودك الجبارة في مجال الهندسة وتقنيات المعلومات. إنك حقًا مصدر إلهام لنا جميعًا، وما قدمته من علم ودعم يشهد له الجميع. إهداء منا لك، من الطالب أوس ياسر عفانه.</p>
-    
-    <h2>نظام BTEC IT</h2>
-    <p>نظام BTEC (Business and Technology Education Council) هو برنامج تعليمي تقدمه مجموعة من المؤسسات الأكاديمية حول العالم، ويهدف إلى تطوير المهارات والمعرفة في مجالات متعددة، بما في ذلك تكنولوجيا المعلومات. يقدم نظام BTEC IT أساسًا قويًا في المفاهيم الأساسية لتكنولوجيا المعلومات ويشمل موضوعات مثل البرمجة، إدارة الشبكات، تحليل النظم، وتصميم قواعد البيانات. يُعتبر هذا النظام مثاليًا للطلاب الذين يرغبون في متابعة مسيرتهم المهنية في مجال تكنولوجيا المعلومات.</p>
-    
-    <p>يتيح نظام BTEC IT للطلاب فرصة اكتساب المهارات العملية التي يحتاجونها في سوق العمل، ويتميز بتوفير مستوى عالٍ من التدريب المهني الذي يساعدهم على التكيف مع متطلبات الصناعة. كما يُمنح الطلاب الفرصة للتعلم من خلال مشاريع عملية، مما يعزز فهمهم النظري ويزيد من قابلية توظيفهم في المستقبل.</p>
+  <div class="navbar">
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">من نحن</a>
+    <a href="products.html">منتجاتنا</a>
+    <a href="services.html">خدماتنا</a>
+    <a href="contact.html">تواصل معنا</a>
+  </div>
 
-    <div class="note">
-      <p>ملاحظة: هذا الموقع مخصص إهداءً للمهندس عبادة عبد العال، وللطالب أوس ياسر عفانه.</p>
+  <div class="section" id="home">
+    <h2>مرحبًا بكم في مؤسسة رواد الأردن التجارية</h2>
+    <div class="content">
+      <p>نحن في مؤسسة رواد الأردن التجارية نقدم أفضل الحلول لمنتجات الإضاءة والمعدات الخاصة بالمنازل والمشاريع التجارية. من خلال الابتكار والجودة العالية، نلبي احتياجات عملائنا في مختلف المجالات.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>منتجاتنا</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <img src="spotlight.jpg" alt="كشافات">
+        <h3><a href="spotlights.html">الكشافات</a></h3>
+      </div>
+      <div class="product-card">
+        <img src="lightbulb.jpg" alt="مصابيح">
+        <h3><a href="bulbs.html">المصابيح</a></h3>
+      </div>
+      <div class="product-card">
+        <img src="decorative.jpg" alt="إضاءة ديكورية">
+        <h3><a href="decorative.html">الإضاءة الديكورية</a></h3>
+      </div>
     </div>
   </div>
 
   <footer>
-    <p>© 2025 - جميع الحقوق محفوظة</p>
+    <p>© 2025 جميع الحقوق محفوظة - مؤسسة رواد الأردن التجارية</p>
   </footer>
 
 </body>
