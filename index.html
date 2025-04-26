@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مؤسسة رواد الأردن التجارية</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+
+    <!-- رأس الصفحة -->
+    <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="رواد الأردن التجارية" width="150">
+                <img src="images/logo.png" alt="مؤسسة رواد الأردن التجارية">
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="store.html">منتجاتنا</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                    <li><a href="cart.html">عربة التسوق</a></li>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">المنتجات</a></li>
+                    <li><a href="#">التفاصيل</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- بطل الصفحة -->
     <section class="hero">
-        <div class="container">
-            <h1 data-aos="fade-up">أفضل حلول الإنارة في الأردن</h1>
-            <p data-aos="fade-up" data-aos-delay="200">منتجات عالية الجودة لتلبية احتياجاتك الكهربائية.</p>
-            <a href="store.html" class="btn" data-aos="fade-up" data-aos-delay="400">استعرض المنتجات</a>
+        <div class="hero-content" data-aos="fade-up">
+            <h1>أفضل حلول الإضاءة في الأردن</h1>
+            <p>نحن نقدم لك أحدث وأفضل الحلول لتلبية احتياجات الإضاءة لديك</p>
+            <a href="#products" class="btn">تصفح المنتجات</a>
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- قائمة المنتجات -->
+    <section id="products" class="product-list">
         <div class="container">
-            <p>© 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">فيسبوك</a>
-                <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">انستغرام</a>
+            <h2>منتجاتنا</h2>
+            <div class="product">
+                <img src="images/product1.jpg" alt="كشاف 100W">
+                <h3>كشاف 100W</h3>
+                <p>أفضل جودة وأداء</p>
+                <a href="#" class="btn">شراء الآن</a>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="كشاف 200W">
+                <h3>كشاف 200W</h3>
+                <p>مناسب لجميع الأغراض</p>
+                <a href="#" class="btn">شراء الآن</a>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="كشاف 300W">
+                <h3>كشاف 300W</h3>
+                <p>الإضاءة الأمثل للمساحات الكبيرة</p>
+                <a href="#" class="btn">شراء الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل (Footer) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>مؤسسة رواد الأردن التجارية | جميع الحقوق محفوظة</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">فيسبوك</a>
+                    <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">إنستغرام</a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
