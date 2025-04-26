@@ -86,11 +86,13 @@ header .nav ul li a:hover {
 .product-list {
     padding: 50px 0;
     text-align: center;
+    background-color: #f4f4f4;
 }
 
 .product-list h2 {
     font-size: 36px;
     margin-bottom: 50px;
+    color: #2c2c2c;
 }
 
 .product {
@@ -102,6 +104,7 @@ header .nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    color: #333;
 }
 
 .product:hover {
@@ -120,29 +123,6 @@ header .nav ul li a:hover {
 
 .product p {
     color: #666;
-}
-
-.product .btn {
-    background-color: #f8a800;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.product .btn:hover {
-    background-color: #e08b00;
-}
-
-/* تفاصيل إضافية */
-.details-section {
-    background-color: #f4f4f4;
-    padding: 50px 0;
-}
-
-.details-section h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
 }
 
 /* تذييل الصفحة */
