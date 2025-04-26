@@ -1,74 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
 body {
-    font-family: 'Cairo', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    direction: rtl;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
 }
 
 header {
-    background-color: #0056b3;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+  background: #003366;
+  color: #fff;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header h1 {
+  float: right;
+  margin-right: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #004494;
-    overflow: hidden;
+  float: left;
+  list-style: none;
+  margin-top: 10px;
 }
 
 nav ul li {
-    float: right;
-    position: relative;
+  display: inline;
+  margin-left: 20px;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #003366;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #0066cc;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content li a {
-    padding: 12px 16px;
-    display: block;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    background-color: #0056b3;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .hero {
-    background: url('banner.jpg') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
+  background: url('https://images.unsplash.com/photo-1581093588401-8521f94870ec?fit=crop&w=1600&q=80') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 10px 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.dark {
+  background: #003366;
+  color: #fff;
+}
+
+.products, .services {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.products li, .services li {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.social a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px #666;
 }
