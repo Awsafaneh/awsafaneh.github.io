@@ -134,6 +134,17 @@ header .nav ul li a:hover {
     background-color: #e08b00;
 }
 
+/* تفاصيل إضافية */
+.details-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.details-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
 /* تذييل الصفحة */
 footer {
     background-color: #2c2c2c;
