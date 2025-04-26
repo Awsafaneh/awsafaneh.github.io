@@ -27,11 +27,9 @@ header {
   transition: all 0.3s ease-in-out;
 }
 
-header h1 {
+header .logo {
+  width: 150px;
   float: right;
-  margin-right: 20px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
 }
 
 nav ul {
@@ -58,7 +56,7 @@ nav ul li a:hover {
 }
 
 .hero {
-  background: url('https://images.unsplash.com/photo-1581093588401-8521f94870ec?fit=crop&w=1600&q=80') no-repeat center center/cover;
+  background: url('https://images.unsplash.com/photo-1518717758533-25e6a33c5b73?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5NzZ8MHx8c2VhcmNofDh8fGxpZ2h0fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center/cover;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -101,19 +99,28 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.products, .services {
+.products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  text-align: center;
+  width: 30%;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.services {
   list-style: none;
-  margin-top: 20px;
 }
 
-.products li, .services li {
-  padding: 10px 0;
+.services li {
   font-size: 20px;
-  transition: transform 0.3s ease;
-}
-
-.products li:hover, .services li:hover {
-  transform: translateX(10px);
+  margin: 10px 0;
 }
 
 .social a {
@@ -126,19 +133,22 @@ footer {
   background: #222;
   color: #aaa;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .whatsapp {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   background: #25d366;
   color: white;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0px 0px 10px #666;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
 }
