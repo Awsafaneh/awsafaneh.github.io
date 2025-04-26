@@ -2,179 +2,238 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة رواد الأردن التجارية</title>
-  <!-- ربط الخطوط الخارجية -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    /* إعدادات عامة */
+    /* الخطوط */
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Cairo', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f7f7;
-      color: #333;
+      scroll-behavior: smooth;
+      background: #f2f2f2;
+      color: #000;
     }
-    /* شريط التنقل العلوي */
+
+    /* الهيدر */
     header {
-      background: #004d99;
-      color: white;
-      padding: 20px;
+      background: #333;
+      color: #d4af37;
+      padding: 30px 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      font-family: 'Cairo', sans-serif;
-    }
-    /* قائمة التنقل */
-    .navbar {
+
+    nav {
+      background: #222;
       display: flex;
       justify-content: center;
-      background: #333;
-      padding: 10px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      gap: 20px;
+      padding: 15px 0;
+      flex-wrap: wrap;
     }
-    .navbar a {
-      color: white;
-      padding: 14px 20px;
+    nav a {
+      color: #fff;
       text-decoration: none;
       font-size: 18px;
-      transition: background-color 0.3s ease-in-out;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s;
     }
-    .navbar a:hover {
-      background-color: #00b5e2;
+    nav a:hover {
+      background: #d4af37;
+      color: #000;
     }
-    /* أقسام الموقع الرئيسية */
-    .section {
+
+    /* القسم الرئيسي */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #d4af37;
+      animation: fadeInDown 1s ease;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    /* أقسام الموقع */
+    section {
       padding: 80px 20px;
       text-align: center;
-      background-color: #f3f3f3;
     }
-    .section h2 {
-      font-size: 32px;
-      color: #004d99;
-      margin-bottom: 20px;
+    section h2 {
+      font-size: 36px;
+      color: #d4af37;
+      margin-bottom: 30px;
+      position: relative;
     }
-    .section p {
-      font-size: 18px;
-      color: #555;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
+    section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #d4af37;
+      display: block;
+      margin: 10px auto 0;
     }
-    /* شبكة المنتجات */
-    .products-grid {
+    .services, .products {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       margin-top: 50px;
     }
-    .product-card {
-      background-color: white;
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .product-card:hover {
+    .card:hover {
       transform: translateY(-10px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     }
-    .product-card img {
+    .card img {
       width: 100%;
       border-radius: 10px;
     }
-    .product-card h3 {
-      font-size: 22px;
-      color: #004d99;
-      margin-top: 15px;
+    .card h3 {
+      margin: 15px 0;
+      font-size: 24px;
+      color: #333;
     }
-    .product-card a {
-      color: #00b5e2;
-      text-decoration: none;
-      font-size: 18px;
-      display: inline-block;
-      margin-top: 10px;
-      transition: color 0.3s ease;
+    .card p {
+      color: #666;
     }
-    .product-card a:hover {
-      color: #004d99;
-    }
-    /* تذييل الصفحة */
+
+    /* الفوتر */
     footer {
-      background-color: #004d99;
-      color: white;
+      background: #333;
+      color: #d4af37;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
     }
-    footer p {
-      margin: 0;
+    footer a {
+      color: #d4af37;
+      margin: 0 10px;
+      font-size: 20px;
     }
-    /* تأثير التحميل */
-    .fadeIn {
-      animation: fadeInAnimation 1s ease-in-out;
+    footer a:hover {
+      color: #fff;
     }
-    @keyframes fadeInAnimation {
-      0% { opacity: 0; }
-      100% { opacity: 1; }
+
+    /* أنيميشن */
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
+
 <body>
 
-  <!-- رأس الصفحة -->
-  <header>
-    <h1>مؤسسة رواد الأردن التجارية</h1>
-  </header>
+<!-- الهيدر -->
+<header>
+  <h1>مؤسسة رواد الأردن التجارية</h1>
+</header>
 
-  <!-- شريط التنقل -->
-  <div class="navbar">
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">من نحن</a>
-    <a href="products.html">منتجاتنا</a>
-    <a href="services.html">خدماتنا</a>
-    <a href="contact.html">تواصل معنا</a>
-  </div>
+<!-- النافبار -->
+<nav>
+  <a href="#home">الرئيسية</a>
+  <a href="#about">من نحن</a>
+  <a href="#products">منتجاتنا</a>
+  <a href="#services">خدماتنا</a>
+  <a href="#contact">تواصل معنا</a>
+</nav>
 
-  <!-- القسم الترحيبي -->
-  <div class="section fadeIn">
-    <h2>مرحبًا بكم في مؤسسة رواد الأردن التجارية</h2>
-    <p>نحن في مؤسسة رواد الأردن نقدم لكم أحدث المنتجات والخدمات في مجال الإضاءة والمعدات الكهربائية للمنزل والمشاريع التجارية.</p>
-  </div>
+<!-- البانر الرئيسي -->
+<section class="hero" id="home">
+  <h1>ريادة وتميّز في عالم الإضاءة</h1>
+  <p>نقدم حلول الإضاءة المتطورة للمشاريع السكنية والتجارية عبر منتجات عالية الجودة ومواصفات عالمية.</p>
+</section>
 
-  <!-- قسم المنتجات -->
-  <div class="section fadeIn">
-    <h2>منتجاتنا</h2>
-    <div class="products-grid">
-      <div class="product-card">
-        <img src="images/spotlight.jpg" alt="كشافات">
-        <h3><a href="spotlights.html">الكشافات</a></h3>
-      </div>
-      <div class="product-card">
-        <img src="images/lightbulb.jpg" alt="مصابيح">
-        <h3><a href="bulbs.html">المصابيح</a></h3>
-      </div>
-      <div class="product-card">
-        <img src="images/decorative.jpg" alt="إضاءة ديكورية">
-        <h3><a href="decorative.html">الإضاءة الديكورية</a></h3>
-      </div>
+<!-- قسم من نحن -->
+<section id="about">
+  <h2>من نحن</h2>
+  <p>مؤسسة رواد الأردن التجارية، خبرة في تقديم أفضل حلول الإنارة والكهرباء بأعلى معايير الجودة وخدمات متميزة لعملائنا داخل وخارج الأردن.</p>
+</section>
+
+<!-- قسم المنتجات -->
+<section id="products">
+  <h2>منتجاتنا</h2>
+  <div class="products">
+    <div class="card">
+      <img src="images/spotlight.jpg" alt="كشافات">
+      <h3>كشافات الإنارة</h3>
+      <p><a href="#">استكشاف المزيد</a></p>
+    </div>
+    <div class="card">
+      <img src="images/led-bulbs.jpg" alt="مصابيح ليد">
+      <h3>مصابيح LED</h3>
+      <p><a href="#">استكشاف المزيد</a></p>
+    </div>
+    <div class="card">
+      <img src="pictures/decor-lights.jpg" alt="إضاءة ديكورية">
+      <h3>إضاءة ديكورية</h3>
+      <p><a href="#">استكشاف المزيد</a></p>
     </div>
   </div>
+</section>
 
-  <!-- تذييل الصفحة -->
-  <footer>
-    <p>© 2025 مؤسسة رواد الأردن التجارية. جميع الحقوق محفوظة.</p>
-    <p>
-      <a href="https://www.facebook.com/roada.jordan" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/roada.jordan" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="tel:+962795776202"><i class="fas fa-phone-alt"></i> +962795776202</a>
-    </p>
-  </footer>
+<!-- قسم الخدمات -->
+<section id="services">
+  <h2>خدماتنا</h2>
+  <div class="services">
+    <div class="card">
+      <i class="fas fa-lightbulb fa-3x" style="color: #d4af37;"></i>
+      <h3>تصميم حلول الإضاءة</h3>
+      <p>خدمات تصميم وتركيب الإضاءة للمشاريع السكنية والتجارية.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-tools fa-3x" style="color: #d4af37;"></i>
+      <h3>دعم فني وصيانة</h3>
+      <p>فريق متخصص لصيانة وفحص الأنظمة الكهربائية والإضاءة.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-handshake fa-3x" style="color: #d4af37;"></i>
+      <h3>توريد للمشاريع</h3>
+      <p>توريد المنتجات الكهربائية للمشاريع الكبرى بأعلى جودة وأسعار منافسة.</p>
+    </div>
+  </div>
+</section>
+
+<!-- قسم التواصل -->
+<section id="contact">
+  <h2>تواصل معنا</h2>
+  <p>📍 العنوان: شارع الأمراء، الرجيب، الأردن</p>
+  <p>📞 الهاتف / واتساب: <a href="https://wa.me/962795776202" target="_blank">+962 795 776 202</a></p>
+  <p>📧 البريد الإلكتروني: info@roadajordan.com</p>
+  <p>تابعونا عبر:</p>
+  <a href="https://www.facebook.com/roada.jordan" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/roada.jordan" target="_blank"><i class="fab fa-instagram"></i></a>
+</section>
+
+<!-- الفوتر -->
+<footer>
+  <p>© 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة</p>
+</footer>
 
 </body>
 </html>
