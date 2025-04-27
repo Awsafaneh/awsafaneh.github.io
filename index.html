@@ -2,82 +2,145 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة رواد الأردن التجارية</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header class="main-header">
-  <div class="container">
-    <h1 class="logo">رواد الأردن التجارية</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="projects.html">مشاريعنا</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <!-- رأس الصفحة -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">رواد الأردن التجارية</div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#products">المنتجات</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#certificates">الشهادات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<section class="hero">
-  <div class="container hero-content">
-    <h2>أهلاً بكم في رواد الأردن التجارية</h2>
-    <p>ريادة في حلول الإنارة والكهرباء بخبرة واسعة وجودة لا تضاهى.</p>
-    <a href="#contact" class="btn">تواصل معنا</a>
-  </div>
-</section>
+  <!-- واجهة -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <h1>أهلاً بكم في مؤسسة رواد الأردن التجارية</h1>
+      <p>نقدم أفضل حلول الإنارة والكهرباء بلمسة احترافية حديثة.</p>
+      <a href="#about" class="btn">اعرف المزيد</a>
+    </div>
+  </section>
 
-<section id="about" class="about">
-  <div class="container">
-    <h2>من نحن</h2>
-    <p>مؤسسة رواد الأردن التجارية تأسست بخبرة راسخة في مجال حلول الإنارة والكهرباء، نقدم منتجات مبتكرة تلبي احتياجات المشاريع السكنية والتجارية.</p>
-    <p>نلتزم بتقديم أفضل الخدمات بمعايير عالمية لضمان رضا عملائنا الكرام.</p>
-  </div>
-</section>
+  <!-- من نحن -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>من نحن</h2>
+      <p>مؤسسة أردنية رائدة في قطاع الإنارة والكهرباء، تأسست لتلبية احتياجات المشاريع السكنية والتجارية بأعلى معايير الجودة.</p>
+      <p>مقرنا: شارع الأمراء - الرجيب - الأردن.</p>
+    </div>
+  </section>
 
-<section id="services" class="services">
-  <div class="container">
-    <h2>خدماتنا</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>توريد الإنارة</h3>
-        <p>توفير أفضل أنواع الإضاءة العصرية بتقنيات موفرة للطاقة.</p>
-      </div>
-      <div class="card">
-        <h3>حلول الكهرباء</h3>
-        <p>أحدث الحلول الكهربائية لأنظمة المباني والمشاريع الكبرى.</p>
-      </div>
-      <div class="card">
-        <h3>الاستشارات الهندسية</h3>
-        <p>دعم فني واستشاري لتصميم وتنفيذ مشاريع الإضاءة والكهرباء.</p>
+  <!-- الخدمات -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2>خدماتنا</h2>
+      <div class="service-boxes">
+        <div class="service-card">
+          <h3>توريد مستلزمات كهربائية</h3>
+          <p>منتجات عالية الجودة لجميع المشاريع الإنشائية.</p>
+        </div>
+        <div class="service-card">
+          <h3>أنظمة إنارة ذكية</h3>
+          <p>حلول إنارة ذكية توفر الطاقة وتعزز الجمال المعماري.</p>
+        </div>
+        <div class="service-card">
+          <h3>تركيب وصيانة</h3>
+          <p>فريق متخصص يضمن تنفيذ دقيق وخدمة ممتازة.</p>
+        </div>
       </div>
     </div>
-    <div class="see-more">
-      <a href="projects.html" class="btn">استكشاف المشاريع</a>
+  </section>
+
+  <!-- المنتجات -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <h2>منتجاتنا</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="images/product1.jpg" alt="كشاف إنارة">
+          <h3>كشافات خارجية</h3>
+        </div>
+        <div class="product-item">
+          <img src="images/product2.jpg" alt="لمبة ذكية">
+          <h3>لمبات ذكية</h3>
+        </div>
+        <div class="product-item">
+          <img src="images/product3.jpg" alt="سبوت لايت">
+          <h3>سبوت لايت داخلي</h3>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>تواصل معنا</h2>
-    <p>شارع الأمراء - الرجيب - الأردن</p>
-    <p>واتساب: <a href="https://wa.me/962795776202" target="_blank">+962795776202</a></p>
-    <p>فيسبوك: <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">صفحتنا</a></p>
-    <p>انستغرام: <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">حسابنا</a></p>
-  </div>
-</section>
+  <!-- المعرض -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2>المعرض</h2>
+      <div class="gallery-grid">
+        <img src="images/gallery1.jpg" alt="صورة مشروع 1">
+        <img src="images/gallery2.jpg" alt="صورة مشروع 2">
+        <img src="images/gallery3.jpg" alt="صورة مشروع 3">
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <div class="container">
-    <p>© 2025 جميع الحقوق محفوظة - مؤسسة رواد الأردن التجارية</p>
-  </div>
-</footer>
+  <!-- الشهادات -->
+  <section id="certificates" class="certificates-section">
+    <div class="container">
+      <h2>الشهادات والإنجازات</h2>
+      <div class="certificate-list">
+        <div class="certificate-item">
+          <h3>ISO 9001</h3>
+          <p>شهادة نظام إدارة الجودة العالمية.</p>
+        </div>
+        <div class="certificate-item">
+          <h3>شهادات شكر وتقدير</h3>
+          <p>من شركات ومؤسسات كبرى في الأردن والمنطقة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تواصل معنا -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>تواصل معنا</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك..." required></textarea>
+        <button type="submit" class="btn">أرسل</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📍 العنوان: شارع الأمراء - الرجيب - الأردن</p>
+        <p>📞 الهاتف: <a href="tel:+962795776202">+962 7 9577 6202</a></p>
+        <p>💬 واتساب: <a href="https://wa.me/962795776202" target="_blank">راسلنا الآن</a></p>
+        <p>📱 تابعنا على <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">فيسبوك</a> و <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">انستقرام</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <p>جميع الحقوق محفوظة © مؤسسة رواد الأردن التجارية 2025</p>
+    </div>
+  </footer>
 
 </body>
 </html>
