@@ -1,92 +1,83 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤسسة رواد الأردن التجارية</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مؤسسة رواد الأردن التجارية</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- رأس الصفحة -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="مؤسسة رواد الأردن التجارية">
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#about">عن المؤسسة</a></li>
-                    <li><a href="#products">المنتجات</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header class="main-header">
+  <div class="container">
+    <h1 class="logo">رواد الأردن التجارية</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="projects.html">مشاريعنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-    <!-- بطل الصفحة -->
-    <section class="hero" data-aos="fade-up">
-        <div class="hero-content">
-            <h1>أحدث حلول الإضاءة في الأردن</h1>
-            <p>مؤسسة رواد الأردن التجارية تقدم لك الأفضل في عالم الإضاءة والكهرباء</p>
-            <a href="#products" class="btn">استكشف منتجاتنا</a>
-        </div>
-    </section>
+<section class="hero">
+  <div class="container hero-content">
+    <h2>أهلاً بكم في رواد الأردن التجارية</h2>
+    <p>ريادة في حلول الإنارة والكهرباء بخبرة واسعة وجودة لا تضاهى.</p>
+    <a href="#contact" class="btn">تواصل معنا</a>
+  </div>
+</section>
 
-    <!-- عن المؤسسة -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>عن المؤسسة</h2>
-            <p>نحن مؤسسة رواد الأردن التجارية، نقدم حلول إضاءة مبتكرة عالية الجودة تناسب كافة احتياجاتك. خبرتنا في المجال تضمن لك أفضل المنتجات والخدمات.</p>
-        </div>
-    </section>
+<section id="about" class="about">
+  <div class="container">
+    <h2>من نحن</h2>
+    <p>مؤسسة رواد الأردن التجارية تأسست بخبرة راسخة في مجال حلول الإنارة والكهرباء، نقدم منتجات مبتكرة تلبي احتياجات المشاريع السكنية والتجارية.</p>
+    <p>نلتزم بتقديم أفضل الخدمات بمعايير عالمية لضمان رضا عملائنا الكرام.</p>
+  </div>
+</section>
 
-    <!-- قائمة المنتجات -->
-    <section id="products" class="product-list">
-        <div class="container">
-            <h2>منتجاتنا</h2>
-            <div class="product" data-aos="fade-up">
-                <img src="images/product1.jpg" alt="كشاف 100W">
-                <h3>كشاف 100W</h3>
-                <p>أفضل جودة وأداء للإضاءة الخارجية والداخلية</p>
-            </div>
-            <div class="product" data-aos="fade-up">
-                <img src="images/product2.jpg" alt="كشاف 200W">
-                <h3>كشاف 200W</h3>
-                <p>مناسب لمشاريع الإضاءة الكبيرة</p>
-            </div>
-            <div class="product" data-aos="fade-up">
-                <img src="images/product3.jpg" alt="كشاف 300W">
-                <h3>كشاف 300W</h3>
-                <p>الإضاءة الأمثل للمساحات الكبيرة</p>
-            </div>
-        </div>
-    </section>
+<section id="services" class="services">
+  <div class="container">
+    <h2>خدماتنا</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>توريد الإنارة</h3>
+        <p>توفير أفضل أنواع الإضاءة العصرية بتقنيات موفرة للطاقة.</p>
+      </div>
+      <div class="card">
+        <h3>حلول الكهرباء</h3>
+        <p>أحدث الحلول الكهربائية لأنظمة المباني والمشاريع الكبرى.</p>
+      </div>
+      <div class="card">
+        <h3>الاستشارات الهندسية</h3>
+        <p>دعم فني واستشاري لتصميم وتنفيذ مشاريع الإضاءة والكهرباء.</p>
+      </div>
+    </div>
+    <div class="see-more">
+      <a href="projects.html" class="btn">استكشاف المشاريع</a>
+    </div>
+  </div>
+</section>
 
-    <!-- اتصل بنا -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>اتصل بنا</h2>
-            <p>لأي استفسارات أو طلبات، لا تتردد في التواصل معنا على:</p>
-            <p>هاتف: +962795776202</p>
-            <p><a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">فيسبوك</a> | <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">إنستغرام</a></p>
-            <p>موقعنا: شارع الامراء-الرجيب-الأردن</p>
-        </div>
-    </section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>تواصل معنا</h2>
+    <p>شارع الأمراء - الرجيب - الأردن</p>
+    <p>واتساب: <a href="https://wa.me/962795776202" target="_blank">+962795776202</a></p>
+    <p>فيسبوك: <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">صفحتنا</a></p>
+    <p>انستغرام: <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">حسابنا</a></p>
+  </div>
+</section>
 
-    <!-- تذييل الصفحة -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة</p>
-        </div>
-    </footer>
+<footer>
+  <div class="container">
+    <p>© 2025 جميع الحقوق محفوظة - مؤسسة رواد الأردن التجارية</p>
+  </div>
+</footer>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 </html>
