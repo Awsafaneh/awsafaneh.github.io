@@ -1,78 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Lighting Company - Home</title>
+    <title>شركتك للإضاءة - الرئيسية</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="/">Your Logo</a>
-                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
-            </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- Add other navigation links -->
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="/">شعارك</a>
+                </div>
+                <ul>
+                    <li><a href="/" class="active">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Your Premier Lighting Solutions</h1>
-            <p>Discover innovative and energy-efficient lighting for every space.</p>
-            <a href="products.html" class="cta-button">Discover Our Products</a>
+            <h1>حلول الإضاءة الرائدة</h1>
+            <p>اكتشف إضاءة مبتكرة وموفرة للطاقة لكل مساحة.</p>
+            <a href="products.html" class="cta-button">اكتشف منتجاتنا</a>
         </section>
 
         <section id="home-about">
-            <h2>About Our Company</h2>
-            <p>Briefly introduce your company here. Mention your commitment to quality and innovation.</p>
-            <a href="about.html" class="cta-button">Learn More About Us</a>
+            <div class="container">
+                <h2>عن شركتنا</h2>
+                <p>مقدمة مختصرة عن شركتك هنا. اذكر التزامك بالجودة والابتكار.</p>
+                <a href="about.html" class="cta-button">اعرف المزيد عنا</a>
+            </div>
         </section>
 
         <section id="home-products">
-            <h2>Featured Products</h2>
-            <p>Highlight some key product categories or new arrivals.</p>
-            <div class="product-highlights">
-                 <div class="highlight-item">
-                    <h4>Indoor LED Solutions</h4>
-                    <p>Energy-saving and stylish options.</p>
-                 </div>
-                 <div class="highlight-item">
-                    <h4>Durable Outdoor Lights</h4>
-                    <p>Built to last in any weather.</p>
-                 </div>
+            <div class="container">
+                <h2>منتجات مميزة</h2>
+                <p>أبرز بعض فئات المنتجات الرئيسية أو أحدث الواصلين.</p>
+                <div class="product-highlights">
+                    <div class="highlight-item">
+                        <h4>حلول LED داخلية</h4>
+                        <p>خيارات أنيقة وموفرة للطاقة.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>إضاءة خارجية متينة</h4>
+                        <p>مصممة لتدوم في جميع الظروف الجوية.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>مفاتيح ومقابس</h4>
+                        <p>جودة عالية وتصاميم متنوعة.</p>
+                    </div>
+                </div>
+                <a href="products.html" class="cta-button">تصفح كل المنتجات</a>
             </div>
-            <a href="products.html" class="cta-button">Explore All Products</a>
         </section>
 
         <section id="home-contact-cta">
-            <h2>Need Assistance?</h2>
-            <p>Our team is ready to help you find the perfect lighting solution.</p>
-            <a href="contact.html" class="cta-button">Get In Touch</a>
+            <div class="container">
+                <h2>هل تحتاج مساعدة؟</h2>
+                <p>فريقنا جاهز لمساعدتك في العثور على حل الإضاءة المثالي.</p>
+                <a href="contact.html" class="cta-button">تواصل معنا</a>
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="contact.html">Contact</a>
-             <!-- Add other links -->
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">من نحن</a> |
+                <a href="products.html">المنتجات</a> |
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="social-media">
+                <a href="#">فيسبوك</a> |
+                <a href="#">لينكدإن</a> |
+                <a href="#">انستغرام</a>
+            </div>
+            <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
         </div>
-        <div class="social-media">
-            <a href="#">Facebook</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
