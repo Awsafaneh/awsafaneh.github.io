@@ -1,83 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Your Lighting Company</title>
+    <title>المنتجات - شركتك للإضاءة</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="/">Your Logo</a>
-                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
-            </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- Add other navigation links -->
-            </ul>
-        </nav>
+         <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="/">شعارك</a>
+                </div>
+                <ul>
+                    <li><a href="/">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="products.html" class="active">المنتجات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="products-content">
-            <h2>Our Products</h2>
-            <p>Explore our wide range of high-quality lighting solutions.</p>
-            
-            <!-- You can enhance this section significantly -->
-            <!-- Example: Filter by category, display products in a grid, etc. -->
+             <div class="container">
+                <h2>منتجاتنا</h2>
+                <p>استكشف مجموعتنا الواسعة من حلول الإضاءة عالية الجودة.</p>
+                
+                <!-- You can enhance this section significantly -->
+                <!-- Example: Filter by category, display products in a grid, etc. -->
 
-            <div class="product-categories">
-                <div class="category">
-                    <!-- <img src="images/indoor.jpg" alt="Indoor Lighting"> -->
-                    <h3>Indoor Units</h3>
-                    <p>Brighten up your interiors with our stylish and efficient indoor lights.</p>
-                    <!-- Link to a more specific indoor category page or show products directly -->
-                    <a href="/products/indoor-category">View Indoor Units</a>
+                <div class="product-categories">
+                    <div class="category">
+                        <h3>وحدات داخلية</h3>
+                        <p>أضئ مساحاتك الداخلية بمصابيحنا الأنيقة والفعالة.</p>
+                        <a href="#">عرض الوحدات الداخلية</a>
+                    </div>
+                    <div class="category">
+                        <h3>وحدات خارجية</h3>
+                        <p>إضاءة متينة ومقاومة للعوامل الجوية للمساحات الخارجية.</p>
+                        <a href="#">عرض الوحدات الخارجية</a>
+                    </div>
+                    <div class="category">
+                        <h3>مفاتيح ومقابس</h3>
+                        <p>أكمل تجهيزاتك بمفاتيحنا ومقابسنا الموثوقة.</p>
+                        <a href="#">عرض المفاتيح والمقابس</a>
+                    </div>
+                    <div class="category">
+                        <h3>اكسسوارات</h3>
+                        <p>اعثر على جميع الملحقات الضرورية لمشاريع الإضاءة الخاصة بك.</p>
+                        <a href="#">عرض الاكسسوارات</a>
+                    </div>
+                    <div class="category">
+                        <h3>إضاءة خطية (Linear)</h3>
+                        <p>حلول إضاءة عصرية للمكاتب والمساحات التجارية.</p>
+                        <a href="#">عرض الإضاءة الخطية</a>
+                    </div>
+                    <div class="category">
+                        <h3>إضاءة المسار (Track Light)</h3>
+                        <p>إضاءة قابلة للتوجيه لإبراز العناصر المرغوبة.</p>
+                        <a href="#">عرض إضاءة المسار</a>
+                    </div>
                 </div>
-                <div class="category">
-                    <!-- <img src="images/outdoor.jpg" alt="Outdoor Lighting"> -->
-                    <h3>Outdoor Units</h3>
-                    <p>Durable and weather-resistant lighting for outdoor spaces.</p>
-                    <a href="/products/outdoor-category">View Outdoor Units</a>
-                </div>
-                <div class="category">
-                    <!-- <img src="images/switches.jpg" alt="Switches & Sockets"> -->
-                    <h3>Switches & Sockets</h3>
-                    <p>Complete your setup with our reliable switches and sockets.</p>
-                    <a href="/products/switches-category">View Switches & Sockets</a>
-                </div>
-                <div class="category">
-                    <!-- <img src="images/accessories.jpg" alt="Accessories"> -->
-                    <h3>Accessories</h3>
-                    <p>Find all the necessary accessories for your lighting projects.</p>
-                    <a href="/products/accessories-category">View Accessories</a>
-                </div>
-                <!-- Add more detailed product listings or categories here -->
+
+                <!-- Consider adding sections for specific product lines like Lemar's (Magnetic, Industrial, etc.) -->
             </div>
-
-            <!-- Consider adding sections for specific product lines like Lemar's (Magnetic, Industrial, etc.) -->
-
         </section>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="contact.html">Contact</a>
-            <!-- Add other links -->
+         <div class="container">
+            <div class="footer-links">
+                <a href="about.html">من نحن</a> |
+                <a href="products.html">المنتجات</a> |
+                <a href="contact.html">اتصل بنا</a>
+            </div>
+            <div class="social-media">
+                 <a href="#">فيسبوك</a> |
+                <a href="#">لينكدإن</a> |
+                <a href="#">انستغرام</a>
+            </div>
+            <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
         </div>
-        <div class="social-media">
-            <a href="#">Facebook</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
