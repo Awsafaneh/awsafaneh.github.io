@@ -1,146 +1,106 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مؤسسة رواد الأردن التجارية</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Lighting Company</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Your Logo</a>
+                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <!-- Add other navigation links like Catalogue, Clients, etc. -->
+            </ul>
+        </nav>
+    </header>
 
-  <!-- رأس الصفحة -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">رواد الأردن التجارية</div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">الرئيسية</a></li>
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#services">الخدمات</a></li>
-          <li><a href="#products">المنتجات</a></li>
-          <li><a href="#gallery">المعرض</a></li>
-          <li><a href="#certificates">الشهادات</a></li>
-          <li><a href="#contact">تواصل معنا</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main>
+        <section id="hero">
+            <h1>Your Premier Lighting Solutions</h1>
+            <p>Discover innovative and energy-efficient lighting for every space.</p>
+            <a href="#products" class="cta-button">Discover More</a>
+        </section>
 
-  <!-- واجهة -->
-  <section id="home" class="home-section">
-    <div class="container">
-      <h1>أهلاً بكم في مؤسسة رواد الأردن التجارية</h1>
-      <p>نقدم أفضل حلول الإنارة والكهرباء بلمسة احترافية حديثة.</p>
-      <a href="#about" class="btn">اعرف المزيد</a>
-    </div>
-  </section>
+        <section id="about">
+            <h2>Who We Are</h2>
+            <p>Your company description goes here. Talk about your mission, vision, and values, similar to Lemar Lighting. Emphasize quality, sustainability, and customer satisfaction.</p>
+            <!-- Add more details or link to a dedicated About Us page -->
+        </section>
 
-  <!-- من نحن -->
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>من نحن</h2>
-      <p>مؤسسة أردنية رائدة في قطاع الإنارة والكهرباء، تأسست لتلبية احتياجات المشاريع السكنية والتجارية بأعلى معايير الجودة.</p>
-      <p>مقرنا: شارع الأمراء - الرجيب - الأردن.</p>
-    </div>
-  </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <p>Showcase your main product categories here.</p>
+            <div class="product-categories">
+                <div class="category">
+                    <!-- <img src="images/indoor.jpg" alt="Indoor Lighting"> -->
+                    <h3>Indoor Units</h3>
+                    <a href="/products/indoor">View Products</a>
+                </div>
+                <div class="category">
+                    <!-- <img src="images/outdoor.jpg" alt="Outdoor Lighting"> -->
+                    <h3>Outdoor Units</h3>
+                    <a href="/products/outdoor">View Products</a>
+                </div>
+                <div class="category">
+                    <!-- <img src="images/switches.jpg" alt="Switches & Sockets"> -->
+                    <h3>Switches & Sockets</h3>
+                    <a href="/products/switches">View Products</a>
+                </div>
+                <div class="category">
+                    <!-- <img src="images/accessories.jpg" alt="Accessories"> -->
+                    <h3>Accessories</h3>
+                    <a href="/products/accessories">View Products</a>
+                </div>
+                <!-- Add more categories as needed -->
+            </div>
+        </section>
 
-  <!-- الخدمات -->
-  <section id="services" class="services-section">
-    <div class="container">
-      <h2>خدماتنا</h2>
-      <div class="service-boxes">
-        <div class="service-card">
-          <h3>توريد مستلزمات كهربائية</h3>
-          <p>منتجات عالية الجودة لجميع المشاريع الإنشائية.</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for inquiries or quotes.</p>
+            <form action="/submit-contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <!-- Add address, phone number, email address etc. -->
+            <p>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <!-- Add links like About Us, Products, Careers, Privacy Policy etc. -->
+            <a href="#about">About Us</a> |
+            <a href="#products">Products</a> |
+            <a href="#contact">Contact</a>
         </div>
-        <div class="service-card">
-          <h3>أنظمة إنارة ذكية</h3>
-          <p>حلول إنارة ذكية توفر الطاقة وتعزز الجمال المعماري.</p>
+        <div class="social-media">
+            <!-- Add social media links/icons -->
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
         </div>
-        <div class="service-card">
-          <h3>تركيب وصيانة</h3>
-          <p>فريق متخصص يضمن تنفيذ دقيق وخدمة ممتازة.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
+    </footer>
 
-  <!-- المنتجات -->
-  <section id="products" class="products-section">
-    <div class="container">
-      <h2>منتجاتنا</h2>
-      <div class="product-grid">
-        <div class="product-item">
-          <img src="images/product1.jpg" alt="كشاف إنارة">
-          <h3>كشافات خارجية</h3>
-        </div>
-        <div class="product-item">
-          <img src="images/product2.jpg" alt="لمبة ذكية">
-          <h3>لمبات ذكية</h3>
-        </div>
-        <div class="product-item">
-          <img src="images/product3.jpg" alt="سبوت لايت">
-          <h3>سبوت لايت داخلي</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- المعرض -->
-  <section id="gallery" class="gallery-section">
-    <div class="container">
-      <h2>المعرض</h2>
-      <div class="gallery-grid">
-        <img src="images/gallery1.jpg" alt="صورة مشروع 1">
-        <img src="images/gallery2.jpg" alt="صورة مشروع 2">
-        <img src="images/gallery3.jpg" alt="صورة مشروع 3">
-      </div>
-    </div>
-  </section>
-
-  <!-- الشهادات -->
-  <section id="certificates" class="certificates-section">
-    <div class="container">
-      <h2>الشهادات والإنجازات</h2>
-      <div class="certificate-list">
-        <div class="certificate-item">
-          <h3>ISO 9001</h3>
-          <p>شهادة نظام إدارة الجودة العالمية.</p>
-        </div>
-        <div class="certificate-item">
-          <h3>شهادات شكر وتقدير</h3>
-          <p>من شركات ومؤسسات كبرى في الأردن والمنطقة.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- تواصل معنا -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>تواصل معنا</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="الاسم الكامل" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea placeholder="رسالتك..." required></textarea>
-        <button type="submit" class="btn">أرسل</button>
-      </form>
-
-      <div class="contact-info">
-        <p>📍 العنوان: شارع الأمراء - الرجيب - الأردن</p>
-        <p>📞 الهاتف: <a href="tel:+962795776202">+962 7 9577 6202</a></p>
-        <p>💬 واتساب: <a href="https://wa.me/962795776202" target="_blank">راسلنا الآن</a></p>
-        <p>📱 تابعنا على <a href="https://www.facebook.com/profile.php?id=61555686376937" target="_blank">فيسبوك</a> و <a href="https://www.instagram.com/jordan.pioneers.trading/" target="_blank">انستقرام</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- الفوتر -->
-  <footer class="footer">
-    <div class="container">
-      <p>جميع الحقوق محفوظة © مؤسسة رواد الأردن التجارية 2025</p>
-    </div>
-  </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
