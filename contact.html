@@ -1,76 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Your Lighting Company</title>
+    <title>اتصل بنا - شركتك للإضاءة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="/">Your Logo</a>
-                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
-            </div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <!-- Add other navigation links -->
-            </ul>
-        </nav>
+         <div class="container">
+            <nav>
+                 <div class="nav-left">
+                     <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="#">العملاء</a></li>
+                        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                 <div class="nav-right">
+                     <div class="header-actions">
+                        <div class="language-switcher">
+                            <a href="#">English <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="search-icon">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                     <div class="logo">
+                         <a href="/" class="text-logo">شعارك</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="contact-content">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for inquiries, quotes, or support.</p>
-            
-            <div class="contact-details">
-                <div>
-                    <h3>Our Office</h3>
-                    <p>123 Lighting Street, City Name, Country</p>
-                    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-                    <p>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
-                    <!-- Add Map Embed Here if desired -->
+             <div class="container">
+                <h2>اتصل بنا</h2>
+                <p>تواصل معنا للاستفسارات أو عروض الأسعار أو الدعم.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-info">
+                        <h3>معلومات الاتصال</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> العنوان: 123 شارع الإضاءة، اسم المدينة، الدولة</p>
+                        <p><i class="fas fa-phone"></i> الهاتف: <a href="tel:+1234567890">+123 456 7890</a></p>
+                        <p><i class="fas fa-envelope"></i> البريد الإلكتروني: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
+                        <!-- Add working hours if needed -->
+                         <div class="social-media-contact">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>أرسل لنا رسالة</h3>
+                        <form action="/submit-contact" method="post" id="contact-form">
+                            <label for="name">الاسم:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="subject">الموضوع:</label>
+                            <input type="text" id="subject" name="subject">
+
+                            <label for="message">الرسالة:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <button type="submit" class="cta-button">إرسال الرسالة</button>
+                        </form>
+                        <p id="form-status"></p> <!-- For showing success/error messages -->
+                    </div>
                 </div>
-                <div>
-                    <h3>Send us a Message</h3>
-                    <form action="/submit-contact" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject">
-
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
+                 <!-- Add map embed section if desired -->
+                 <div class="map-container">
+                     <!-- <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="contact.html">Contact</a>
-            <!-- Add other links -->
+         <div class="container">
+            <div class="footer-content">
+                 <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <a href="/">الرئيسية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="products.html">المنتجات</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>المنتجات</h4>
+                    <a href="#">وحدات داخلية</a>
+                    <a href="#">وحدات خارجية</a>
+                    <a href="#">مفاتيح ومقابس</a>
+                    <a href="#">اكسسوارات</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <p>العنوان: 123 شارع الإضاءة...</p>
+                    <p>الهاتف: <a href="tel:123">123-456-7890</a></p>
+                    <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+                     <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                 <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
-        <div class="social-media">
-            <a href="#">Facebook</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
