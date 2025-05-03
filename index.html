@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Lighting Company</title>
+    <title>Your Lighting Company - Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,10 +15,10 @@
             </div>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <!-- Add other navigation links like Catalogue, Clients, etc. -->
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- Add other navigation links -->
             </ul>
         </nav>
     </header>
@@ -27,73 +27,47 @@
         <section id="hero">
             <h1>Your Premier Lighting Solutions</h1>
             <p>Discover innovative and energy-efficient lighting for every space.</p>
-            <a href="#products" class="cta-button">Discover More</a>
+            <a href="products.html" class="cta-button">Discover Our Products</a>
         </section>
 
-        <section id="about">
-            <h2>Who We Are</h2>
-            <p>Your company description goes here. Talk about your mission, vision, and values, similar to Lemar Lighting. Emphasize quality, sustainability, and customer satisfaction.</p>
-            <!-- Add more details or link to a dedicated About Us page -->
+        <section id="home-about">
+            <h2>About Our Company</h2>
+            <p>Briefly introduce your company here. Mention your commitment to quality and innovation.</p>
+            <a href="about.html" class="cta-button">Learn More About Us</a>
         </section>
 
-        <section id="products">
-            <h2>Our Products</h2>
-            <p>Showcase your main product categories here.</p>
-            <div class="product-categories">
-                <div class="category">
-                    <!-- <img src="images/indoor.jpg" alt="Indoor Lighting"> -->
-                    <h3>Indoor Units</h3>
-                    <a href="/products/indoor">View Products</a>
-                </div>
-                <div class="category">
-                    <!-- <img src="images/outdoor.jpg" alt="Outdoor Lighting"> -->
-                    <h3>Outdoor Units</h3>
-                    <a href="/products/outdoor">View Products</a>
-                </div>
-                <div class="category">
-                    <!-- <img src="images/switches.jpg" alt="Switches & Sockets"> -->
-                    <h3>Switches & Sockets</h3>
-                    <a href="/products/switches">View Products</a>
-                </div>
-                <div class="category">
-                    <!-- <img src="images/accessories.jpg" alt="Accessories"> -->
-                    <h3>Accessories</h3>
-                    <a href="/products/accessories">View Products</a>
-                </div>
-                <!-- Add more categories as needed -->
+        <section id="home-products">
+            <h2>Featured Products</h2>
+            <p>Highlight some key product categories or new arrivals.</p>
+            <div class="product-highlights">
+                 <div class="highlight-item">
+                    <h4>Indoor LED Solutions</h4>
+                    <p>Energy-saving and stylish options.</p>
+                 </div>
+                 <div class="highlight-item">
+                    <h4>Durable Outdoor Lights</h4>
+                    <p>Built to last in any weather.</p>
+                 </div>
             </div>
+            <a href="products.html" class="cta-button">Explore All Products</a>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for inquiries or quotes.</p>
-            <form action="/submit-contact" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-            <!-- Add address, phone number, email address etc. -->
-            <p>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
-            <p>Phone: +123 456 7890</p>
+        <section id="home-contact-cta">
+            <h2>Need Assistance?</h2>
+            <p>Our team is ready to help you find the perfect lighting solution.</p>
+            <a href="contact.html" class="cta-button">Get In Touch</a>
         </section>
+
     </main>
 
     <footer>
         <div class="footer-links">
-            <!-- Add links like About Us, Products, Careers, Privacy Policy etc. -->
-            <a href="#about">About Us</a> |
-            <a href="#products">Products</a> |
-            <a href="#contact">Contact</a>
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a>
+             <!-- Add other links -->
         </div>
         <div class="social-media">
-            <!-- Add social media links/icons -->
             <a href="#">Facebook</a> |
             <a href="#">LinkedIn</a> |
             <a href="#">Instagram</a>
@@ -103,4 +77,4 @@
 
     <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
