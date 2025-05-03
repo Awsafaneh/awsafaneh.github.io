@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المنتجات - شركتك للإضاءة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
          <div class="container">
             <nav>
-                <div class="logo">
-                    <a href="/">شعارك</a>
+                <div class="nav-left">
+                     <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="products.html" class="active">المنتجات</a></li>
+                        <li><a href="#">العملاء</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="/">الرئيسية</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="products.html" class="active">المنتجات</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
+                 <div class="nav-right">
+                     <div class="header-actions">
+                        <div class="language-switcher">
+                            <a href="#">English <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="search-icon">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                     <div class="logo">
+                         <a href="/" class="text-logo">شعارك</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -28,61 +42,85 @@
              <div class="container">
                 <h2>منتجاتنا</h2>
                 <p>استكشف مجموعتنا الواسعة من حلول الإضاءة عالية الجودة.</p>
-                
-                <!-- You can enhance this section significantly -->
-                <!-- Example: Filter by category, display products in a grid, etc. -->
+
+                <!-- Maybe add filters here later -->
 
                 <div class="product-categories">
                     <div class="category">
+                        <!-- Add product image placeholder -->
+                        <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>وحدات داخلية</h3>
                         <p>أضئ مساحاتك الداخلية بمصابيحنا الأنيقة والفعالة.</p>
-                        <a href="#">عرض الوحدات الداخلية</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
                     <div class="category">
+                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>وحدات خارجية</h3>
                         <p>إضاءة متينة ومقاومة للعوامل الجوية للمساحات الخارجية.</p>
-                        <a href="#">عرض الوحدات الخارجية</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
                     <div class="category">
+                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>مفاتيح ومقابس</h3>
                         <p>أكمل تجهيزاتك بمفاتيحنا ومقابسنا الموثوقة.</p>
-                        <a href="#">عرض المفاتيح والمقابس</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
                     <div class="category">
+                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>اكسسوارات</h3>
                         <p>اعثر على جميع الملحقات الضرورية لمشاريع الإضاءة الخاصة بك.</p>
-                        <a href="#">عرض الاكسسوارات</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
-                    <div class="category">
+                     <div class="category">
+                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>إضاءة خطية (Linear)</h3>
                         <p>حلول إضاءة عصرية للمكاتب والمساحات التجارية.</p>
-                        <a href="#">عرض الإضاءة الخطية</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
-                    <div class="category">
+                     <div class="category">
+                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
                         <h3>إضاءة المسار (Track Light)</h3>
                         <p>إضاءة قابلة للتوجيه لإبراز العناصر المرغوبة.</p>
-                        <a href="#">عرض إضاءة المسار</a>
+                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
                     </div>
+                     <!-- Add more categories -->
                 </div>
-
-                <!-- Consider adding sections for specific product lines like Lemar's (Magnetic, Industrial, etc.) -->
             </div>
         </section>
     </main>
 
     <footer>
          <div class="container">
-            <div class="footer-links">
-                <a href="about.html">من نحن</a> |
-                <a href="products.html">المنتجات</a> |
-                <a href="contact.html">اتصل بنا</a>
+            <div class="footer-content">
+                 <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <a href="/">الرئيسية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="products.html">المنتجات</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>المنتجات</h4>
+                    <a href="#">وحدات داخلية</a>
+                    <a href="#">وحدات خارجية</a>
+                    <a href="#">مفاتيح ومقابس</a>
+                    <a href="#">اكسسوارات</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <p>العنوان: 123 شارع الإضاءة...</p>
+                    <p>الهاتف: <a href="tel:123">123-456-7890</a></p>
+                    <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+                     <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="social-media">
-                 <a href="#">فيسبوك</a> |
-                <a href="#">لينكدإن</a> |
-                <a href="#">انستغرام</a>
+            <div class="footer-bottom">
+                 <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
             </div>
-            <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
