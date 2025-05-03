@@ -3,80 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - شركتك للإضاءة</title>
+    <title>من نحن - شركتك للإضاءة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-         <div class="container">
+        <div class="container">
             <nav>
-                <div class="logo">
-                    <a href="/">شعارك</a>
+                 <div class="nav-left">
+                     <ul>
+                        <li><a href="/">الرئيسية</a></li>
+                        <li><a href="about.html" class="active">من نحن</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="#">العملاء</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
                 </div>
-                <ul>
-                    <li><a href="/">الرئيسية</a></li>
-                    <li><a href="about.html">من نحن</a></li>
-                    <li><a href="products.html">المنتجات</a></li>
-                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
-                    <!-- Add other navigation links -->
-                </ul>
+                 <div class="nav-right">
+                     <div class="header-actions">
+                        <div class="language-switcher">
+                            <a href="#">English <i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="search-icon">
+                            <a href="#"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                     <div class="logo">
+                         <a href="/" class="text-logo">شعارك</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="contact-content">
+        <section id="about-content">
              <div class="container">
-                <h2>اتصل بنا</h2>
-                <p>تواصل معنا للاستفسارات أو عروض الأسعار أو الدعم.</p>
-                
-                <div class="contact-details">
-                    <div>
-                        <h3>مكتبنا</h3>
-                        <p>123 شارع الإضاءة، اسم المدينة، الدولة</p>
-                        <p>الهاتف: <a href="tel:+1234567890">+123 456 7890</a></p>
-                        <p>البريد الإلكتروني: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
-                        <!-- Add Map Embed Here if desired -->
-                        <!-- Example: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <h2>من نحن</h2>
+                <p>وصف شركتك يوضع هنا. تحدث عن مهمتك ورؤيتك وقيمك، بشكل مشابه لـ Lemar Lighting. أكّد على الجودة والاستدامة ورضا العملاء.</p>
+                <p>تأسست شركة [اسم شركتك] في عام [سنة التأسيس]، وهي ملتزمة بتقديم حلول إضاءة عالية المستوى...</p>
+                <h3>رؤيتنا</h3>
+                <p>إضاءة المستقبل بحلول مبتكرة ومستدامة...</p>
+                <h3>مهمتنا</h3>
+                <p>تقديم منتجات وخدمات إضاءة استثنائية تعزز المساحات والتجارب...</p>
+            </div>
+        </section>
+         <!-- Add other sections as needed, inspired by Lemar's About page -->
+         <section id="about-values">
+            <div class="container">
+                <h2>قيمنا</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i> <!-- Example Icon -->
+                        <h4>الابتكار</h4>
+                        <p>نسعى دائمًا لتقديم أحدث التقنيات.</p>
                     </div>
-                    <div>
-                        <h3>أرسل لنا رسالة</h3>
-                        <form action="/submit-contact" method="post" id="contact-form">
-                            <label for="name">الاسم:</label>
-                            <input type="text" id="name" name="name" required>
-
-                            <label for="email">البريد الإلكتروني:</label>
-                            <input type="email" id="email" name="email" required>
-
-                            <label for="subject">الموضوع:</label>
-                            <input type="text" id="subject" name="subject">
-
-                            <label for="message">الرسالة:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-
-                            <button type="submit">إرسال الرسالة</button>
-                        </form>
-                        <p id="form-status"></p>
+                    <div class="value-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>الجودة</h4>
+                        <p>نلتزم بأعلى معايير الجودة العالمية.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-leaf"></i>
+                        <h4>الاستدامة</h4>
+                        <p>نوفر حلولًا موفرة للطاقة وصديقة للبيئة.</p>
                     </div>
                 </div>
             </div>
-        </section>
+         </section>
     </main>
 
     <footer>
          <div class="container">
-            <div class="footer-links">
-                <a href="about.html">من نحن</a> |
-                <a href="products.html">المنتجات</a> |
-                <a href="contact.html">اتصل بنا</a>
-                <!-- Add other links -->
+            <div class="footer-content">
+                 <div class="footer-col">
+                    <h4>روابط سريعة</h4>
+                    <a href="/">الرئيسية</a>
+                    <a href="about.html">من نحن</a>
+                    <a href="products.html">المنتجات</a>
+                    <a href="contact.html">اتصل بنا</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>المنتجات</h4>
+                    <a href="#">وحدات داخلية</a>
+                    <a href="#">وحدات خارجية</a>
+                    <a href="#">مفاتيح ومقابس</a>
+                    <a href="#">اكسسوارات</a>
+                </div>
+                 <div class="footer-col">
+                    <h4>تواصل معنا</h4>
+                    <p>العنوان: 123 شارع الإضاءة...</p>
+                    <p>الهاتف: <a href="tel:123">123-456-7890</a></p>
+                    <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
+                     <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="social-media">
-                 <a href="#">فيسبوك</a> |
-                <a href="#">لينكدإن</a> |
-                <a href="#">انستغرام</a>
+            <div class="footer-bottom">
+                 <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
             </div>
-            <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
