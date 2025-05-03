@@ -1,333 +1,236 @@
-/* إعدادات عامة */
+/* Basic Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Cairo', sans-serif;
-  background-color: #f2f2f2; /* سكّني فاتح */
-  color: #000;
-  line-height: 1.7;
-  scroll-behavior: smooth;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* رأس الصفحة */
-.header {
-  background: #1c1c1c;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+a:hover {
+    text-decoration: underline;
 }
 
-.logo {
-  color: #d4af37; /* ذهبي */
-  font-size: 28px;
-  font-weight: bold;
+/* Header & Navigation */
+header {
+    background-color: #f8f9fa;
+    padding: 1rem 5%;
+    border-bottom: 1px solid #e7e7e7;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 10px;
-}
-
-.navbar a {
-  color: #fff;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #d4af37;
-}
-
-/* واجهة رئيسية */
-.home-section {
-  background: linear-gradient(to right, #b0b0b0, #d4af37);
-  text-align: center;
-  padding: 150px 20px;
-}
-
-.home-section h1 {
-  font-size: 48px;
-  color: #000;
-}
-
-.home-section p {
-  font-size: 20px;
-  margin: 20px 0;
-}
-
-.btn {
-  background-color: #d4af37;
-  color: #fff;
-  padding: 12px 25px;
-  font-size: 18px;
-  border-radius: 30px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #a0801c;
-}
-
-/* من نحن */
-.about-section {
-  padding: 80px 0;
-}
-
-.about-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.about-section p {
-  max-width: 800px;
-  margin: auto;
-  font-size: 18px;
-  color: #333;
-  text-align: center;
-}
-
-/* الخدمات */
-.services-section {
-  background: #ebebeb;
-  padding: 80px 0;
-}
-
-.services-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.service-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.service-card {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 30px;
-  border-radius: 12px;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-}
-
-/* المنتجات */
-.products-section {
-  padding: 80px 0;
-}
-
-.products-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.product-item {
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  overflow: hidden;
-  width: 280px;
-  text-align: center;
-}
-
-.product-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-}
-
-.product-item h3 {
-  padding: 15px;
-  font-size: 20px;
-}
-
-/* المعرض */
-.gallery-section {
-  background: #ebebeb;
-  padding: 80px 0;
-}
-
-.gallery-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.gallery-grid img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.05);
-}
-
-/* الشهادات */
-.certificates-section {
-  padding: 80px 0;
-}
-
-.certificates-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.certificate-list {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.certificate-item {
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-}
-
-/* تواصل معنا */
-.contact-section {
-  background: #f9f9f9;
-  padding: 80px 0;
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #d4af37;
-  margin-bottom: 40px;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact-form input, .contact-form textarea {
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-}
-
-.contact-form button {
-  align-self: center;
-}
-
-.contact-info {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 18px;
-}
-
-/* فوتر */
-.footer {
-  background: #1c1c1c;
-  padding: 20px 0;
-  text-align: center;
-  color: #aaa;
-  font-size: 16px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .service-boxes, .product-grid, .certificate-list, .gallery-grid {
-    flex-direction: column;
+header nav {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-  }
 }
 
-/* انيميشن Scroll */
+header .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #333;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Main Content Sections */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
 section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
 }
 
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
 }
 
-/* زر للأعلى */
-#scrollTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #d4af37;
-  color: #fff;
-  padding: 12px;
-  border-radius: 50%;
-  font-size: 20px;
-  display: none;
-  cursor: pointer;
-  transition: background 0.3s;
+section h1, section h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #222;
 }
 
-#scrollTopBtn:hover {
-  background: #a0801c;
+section h1 {
+    font-size: 2.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    background-color: #e9ecef; /* Light background for hero */
+    padding: 4rem 1rem;
+    border-radius: 8px;
+}
+
+#hero p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* About Section */
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Products Section */
+.product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.category {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.category h3 {
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+.category a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact form {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact form textarea {
+    resize: vertical;
+}
+
+#contact form button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact form button:hover {
+    background-color: #218838;
+}
+
+#contact p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #adb5bd;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer .footer-links,
+footer .social-media {
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #adb5bd;
 }
