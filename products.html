@@ -1,47 +1,85 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفاصيل المنتج - كشاف 100W</title>
+    <title>Products - Your Lighting Company</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header>
+        <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="رواد الأردن التجارية" width="150">
+                <a href="/">Your Logo</a>
+                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="store.html">منتجاتنا</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                    <li><a href="cart.html">عربة التسوق</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- Add other navigation links -->
+            </ul>
+        </nav>
     </header>
 
-    <section class="product-detail">
-        <div class="container">
-            <div class="product-info">
-                <img src="images/product1.jpg" alt="كشاف 100W" width="300">
-                <div class="details">
-                    <h2>كشاف 100W</h2>
-                    <p>كشاف LED عالي الأداء مع ضمان 3 سنوات. مثالي للاستخدام في الأماكن المفتوحة والمنازل والمكاتب.</p>
-                    <p class="price">دينار 25.00</p>
-                    <button class="btn">إضافة إلى العربة</button>
+    <main>
+        <section id="products-content">
+            <h2>Our Products</h2>
+            <p>Explore our wide range of high-quality lighting solutions.</p>
+            
+            <!-- You can enhance this section significantly -->
+            <!-- Example: Filter by category, display products in a grid, etc. -->
+
+            <div class="product-categories">
+                <div class="category">
+                    <!-- <img src="images/indoor.jpg" alt="Indoor Lighting"> -->
+                    <h3>Indoor Units</h3>
+                    <p>Brighten up your interiors with our stylish and efficient indoor lights.</p>
+                    <!-- Link to a more specific indoor category page or show products directly -->
+                    <a href="/products/indoor-category">View Indoor Units</a>
                 </div>
+                <div class="category">
+                    <!-- <img src="images/outdoor.jpg" alt="Outdoor Lighting"> -->
+                    <h3>Outdoor Units</h3>
+                    <p>Durable and weather-resistant lighting for outdoor spaces.</p>
+                    <a href="/products/outdoor-category">View Outdoor Units</a>
+                </div>
+                <div class="category">
+                    <!-- <img src="images/switches.jpg" alt="Switches & Sockets"> -->
+                    <h3>Switches & Sockets</h3>
+                    <p>Complete your setup with our reliable switches and sockets.</p>
+                    <a href="/products/switches-category">View Switches & Sockets</a>
+                </div>
+                <div class="category">
+                    <!-- <img src="images/accessories.jpg" alt="Accessories"> -->
+                    <h3>Accessories</h3>
+                    <p>Find all the necessary accessories for your lighting projects.</p>
+                    <a href="/products/accessories-category">View Accessories</a>
+                </div>
+                <!-- Add more detailed product listings or categories here -->
             </div>
-        </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة.</p>
+            <!-- Consider adding sections for specific product lines like Lemar's (Magnetic, Industrial, etc.) -->
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a>
+            <!-- Add other links -->
         </div>
+        <div class="social-media">
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
     </footer>
-</body>
-</html>
 
+    <script src="js/script.js"></script>
+</body>
+</html> 
