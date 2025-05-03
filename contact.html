@@ -1,45 +1,78 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تواصل معنا - مؤسسة رواد الأردن التجارية</title>
+    <title>Contact Us - Your Lighting Company</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
+    <header>
+        <nav>
             <div class="logo">
-                <img src="images/logo.png" alt="رواد الأردن التجارية" width="150">
+                <a href="/">Your Logo</a>
+                <!-- Or <img src="images/logo.png" alt="Your Logo"> -->
             </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">الرئيسية</a></li>
-                    <li><a href="store.html">منتجاتنا</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                    <li><a href="cart.html">عربة التسوق</a></li>
-                </ul>
-            </nav>
-        </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <!-- Add other navigation links -->
+            </ul>
+        </nav>
     </header>
 
-    <section class="contact">
-        <div class="container">
-            <h2>تواصل معنا</h2>
-            <p>إذا كان لديك أي استفسار أو طلب، لا تتردد في التواصل معنا:</p>
-            <ul>
-                <li><strong>واتساب:</strong> <a href="https://wa.me/962795776202">+962795776202</a></li>
-                <li><strong>فيسبوك:</strong> <a href="https://www.facebook.com/profile.php?id=61555686376937">صفحتنا على فيسبوك</a></li>
-                <li><strong>انستغرام:</strong> <a href="https://www.instagram.com/jordan.pioneers.trading/">صفحتنا على انستغرام</a></li>
-                <li><strong>العنوان:</strong> شارع الأمراء - الرجيب - الأردن</li>
-            </ul>
-        </div>
-    </section>
+    <main>
+        <section id="contact-content">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for inquiries, quotes, or support.</p>
+            
+            <div class="contact-details">
+                <div>
+                    <h3>Our Office</h3>
+                    <p>123 Lighting Street, City Name, Country</p>
+                    <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                    <p>Email: <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a></p>
+                    <!-- Add Map Embed Here if desired -->
+                </div>
+                <div>
+                    <h3>Send us a Message</h3>
+                    <form action="/submit-contact" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 مؤسسة رواد الأردن التجارية - جميع الحقوق محفوظة.</p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact.html">Contact</a>
+            <!-- Add other links -->
         </div>
+        <div class="social-media">
+            <a href="#">Facebook</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2024 Your Lighting Company. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html> 
