@@ -1,4 +1,6 @@
-// جافا سكربت بسيط لتفعيل تأثيرات الحركة عند التمرير
-document.addEventListener("DOMContentLoaded", function () {
-    AOS.init();
-});
+// Add any JavaScript functionality here, e.g.:
+// - Interactive elements (like image carousels)
+// - Form validation
+// - Dynamic content loading
+
+console.log('Script loaded.');
