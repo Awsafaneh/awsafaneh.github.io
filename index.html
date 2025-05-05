@@ -1,127 +1,59 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركتك للإضاءة - الرئيسية</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الموقع تحت الصيانة</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 1em;
+      text-decoration: none;
+      background-color: #E1306C;
+      color: #fff;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #c71f5f;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="nav-left">
-                     <ul>
-                        <li><a href="/" class="active">الرئيسية</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="products.html">المنتجات</a></li>
-                        <li><a href="#">العملاء</a></li>
-                        <li><a href="contact.html">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                <div class="nav-right">
-                     <div class="header-actions">
-                        <div class="language-switcher">
-                            <a href="#">English <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="search-icon">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                     <div class="logo">
-                        <a href="/" class="text-logo">شعارك</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="hero">
-            <h1>شركة متخصصة بعالم<br>الإنارة</h1>
-            <p>اكتشف عالماً جديداً في تقنيات الإنارة الحديثة</p>
-            <a href="products.html" class="cta-button">اكتشف المزيد</a>
-        </section>
-
-        <section id="home-about">
-            <div class="container">
-                <h2>عن شركتنا</h2>
-                <p>مقدمة مختصرة عن شركتك هنا. اذكر التزامك بالجودة والابتكار.</p>
-                <a href="about.html" class="cta-button">اعرف المزيد عنا</a>
-            </div>
-        </section>
-
-        <section id="home-products">
-            <div class="container">
-                <h2>منتجات مميزة</h2>
-                <p>أبرز بعض فئات المنتجات الرئيسية أو أحدث الواصلين.</p>
-                <div class="product-highlights">
-                    <div class="highlight-item">
-                        <h4>حلول LED داخلية</h4>
-                        <p>خيارات أنيقة وموفرة للطاقة.</p>
-                        <a href="#" class="view-link">عرض المنتجات <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <div class="highlight-item">
-                        <h4>إضاءة خارجية متينة</h4>
-                        <p>مصممة لتدوم في جميع الظروف الجوية.</p>
-                        <a href="#" class="view-link">عرض المنتجات <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <div class="highlight-item">
-                        <h4>مفاتيح ومقابس</h4>
-                        <p>جودة عالية وتصاميم متنوعة.</p>
-                        <a href="#" class="view-link">عرض المنتجات <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-                <a href="products.html" class="cta-button">تصفح كل المنتجات</a>
-            </div>
-        </section>
-
-        <section id="home-contact-cta">
-            <div class="container">
-                <h2>هل تحتاج مساعدة؟</h2>
-                <p>فريقنا جاهز لمساعدتك في العثور على حل الإضاءة المثالي.</p>
-                <a href="contact.html" class="cta-button">تواصل معنا</a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h4>روابط سريعة</h4>
-                    <a href="/">الرئيسية</a>
-                    <a href="about.html">من نحن</a>
-                    <a href="products.html">المنتجات</a>
-                    <a href="contact.html">اتصل بنا</a>
-                </div>
-                <div class="footer-col">
-                    <h4>المنتجات</h4>
-                    <a href="#">وحدات داخلية</a>
-                    <a href="#">وحدات خارجية</a>
-                    <a href="#">مفاتيح ومقابس</a>
-                    <a href="#">اكسسوارات</a>
-                </div>
-                <div class="footer-col">
-                    <h4>تواصل معنا</h4>
-                    <p>العنوان: 123 شارع الإضاءة...</p>
-                    <p>الهاتف: <a href="tel:123">123-456-7890</a></p>
-                    <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
-                    <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+  <div class="container">
+    <h1>🚧 الموقع تحت الصيانة 🚧</h1>
+    <p>نقوم ببعض التحسينات. شكرًا لصبرك!</p>
+    <a href="https://www.instagram.com/_awsafaneh" class="btn" target="_blank">تابع @_awsafaneh</a>
+    <a href="https://www.instagram.com/tech_by_aws" class="btn" target="_blank">تابع @tech_by_aws</a>
+  </div>
 </body>
-</html> 
+</html>
