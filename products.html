@@ -1,129 +1,109 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المنتجات - شركتك للإضاءة</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Products | LEMAR LIGHTING</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* استخدم نفس CSS من index.html هنا */
+    body {margin:0;font-family:'Roboto','Poppins',Arial,sans-serif;color:#131313;background:#fff;}
+    /* ... (إلخ – ضع CSS السابق كله هنا أو استورد ملف خارجي) */
+  </style>
 </head>
 <body>
-    <header>
-         <div class="container">
-            <nav>
-                <div class="nav-left">
-                     <ul>
-                        <li><a href="/">الرئيسية</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="products.html" class="active">المنتجات</a></li>
-                        <li><a href="#">العملاء</a></li>
-                        <li><a href="contact.html">تواصل معنا</a></li>
-                    </ul>
-                </div>
-                 <div class="nav-right">
-                     <div class="header-actions">
-                        <div class="language-switcher">
-                            <a href="#">English <i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="search-icon">
-                            <a href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                    </div>
-                     <div class="logo">
-                         <a href="/" class="text-logo">شعارك</a>
-                    </div>
-                </div>
-            </nav>
+  <!-- Navbar ... -->
+  <header>
+    <div class="navbar">
+      <img src="https://ext.same-assets.com/2804546654/2626856418.png" alt="LEMAR Lighting Logo" class="navbar-logo"/>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" style="font-weight:bold;">العربية</a>
+      </nav>
+    </div>
+  </header>
+  <main style="max-width:1100px;margin:0 auto;padding:0 16px;">
+    <h1 class="who-title" style="margin-top:60px; text-align:center;">PRODUCTS</h1>
+    <div style="text-align:center; margin-bottom:30px;">A wide range of luminaires to meet all customer needs - Indoor, Outdoor, and Special Units.</div>
+    <div class="products-row">
+      <div class="prod-card">
+        <img src="https://ext.same-assets.com/2804546654/2481624551.png" style="width:100%;max-width:165px;display:block;margin:auto;"/>
+        <div class="prod-title">LED DOWNLIGHT</div>
+        <a class="prod-link" href="led-downlight.html">Details</a>
+      </div>
+      <div class="prod-card">
+        <img src="https://ext.same-assets.com/2804546654/1872455976.png" style="width:100%;max-width:165px;display:block;margin:auto;"/>
+        <div class="prod-title">MAGNETIC SERIES</div>
+        <a class="prod-link" href="magnetic-series.html">Details</a>
+      </div>
+      <div class="prod-card">
+        <img src="https://ext.same-assets.com/2804546654/3717158097.png" style="width:100%;max-width:165px;display:block;margin:auto;"/>
+        <div class="prod-title">INDUSTRIAL LIGHT</div>
+        <a class="prod-link" href="industrial-light.html">Details</a>
+      </div>
+      <div class="prod-card">
+        <img src="https://ext.same-assets.com/2804546654/767490675.png" style="width:100%;max-width:165px;display:block;margin:auto;"/>
+        <div class="prod-title">ALU PROFILE</div>
+        <a class="prod-link" href="alu-profile.html">Details</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin:44px 0 25px;">
+      <a href="catalogue.html" class="btn-main">See Full Catalogue</a>
+    </div>
+  </main>
+  <!-- Footer ... -->
+  <footer>
+    <div class="footer-row">
+      <!-- نفس محتوى الفوتر السابق -->
+      <div class="footer-col">
+        <img src="https://ext.same-assets.com/2804546654/2626856418.png" class="footer-logo" alt="Logo"/>
+        <div style="font-size:.97rem; margin-bottom:13px;">
+        At <b>Lemar Lighting</b>, we provide efficient, sustainable, and tailored lighting solutions that enhance spaces and reduce energy costs. Since 2013, we’ve been helping businesses, architects, and designers worldwide create smarter, more impactful environments with lighting that meets the highest global standards.
         </div>
-    </header>
-
-    <main>
-        <section id="products-content">
-             <div class="container">
-                <h2>منتجاتنا</h2>
-                <p>استكشف مجموعتنا الواسعة من حلول الإضاءة عالية الجودة.</p>
-
-                <!-- Maybe add filters here later -->
-
-                <div class="product-categories">
-                    <div class="category">
-                        <!-- Add product image placeholder -->
-                        <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>وحدات داخلية</h3>
-                        <p>أضئ مساحاتك الداخلية بمصابيحنا الأنيقة والفعالة.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <div class="category">
-                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>وحدات خارجية</h3>
-                        <p>إضاءة متينة ومقاومة للعوامل الجوية للمساحات الخارجية.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <div class="category">
-                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>مفاتيح ومقابس</h3>
-                        <p>أكمل تجهيزاتك بمفاتيحنا ومقابسنا الموثوقة.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                    <div class="category">
-                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>اكسسوارات</h3>
-                        <p>اعثر على جميع الملحقات الضرورية لمشاريع الإضاءة الخاصة بك.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                     <div class="category">
-                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>إضاءة خطية (Linear)</h3>
-                        <p>حلول إضاءة عصرية للمكاتب والمساحات التجارية.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                     <div class="category">
-                         <div class="category-image" style="background-color: #eee; height: 150px; margin-bottom: 1rem;"></div>
-                        <h3>إضاءة المسار (Track Light)</h3>
-                        <p>إضاءة قابلة للتوجيه لإبراز العناصر المرغوبة.</p>
-                        <a href="#" class="view-link">عرض التفاصيل <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                     <!-- Add more categories -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-         <div class="container">
-            <div class="footer-content">
-                 <div class="footer-col">
-                    <h4>روابط سريعة</h4>
-                    <a href="/">الرئيسية</a>
-                    <a href="about.html">من نحن</a>
-                    <a href="products.html">المنتجات</a>
-                    <a href="contact.html">اتصل بنا</a>
-                </div>
-                 <div class="footer-col">
-                    <h4>المنتجات</h4>
-                    <a href="#">وحدات داخلية</a>
-                    <a href="#">وحدات خارجية</a>
-                    <a href="#">مفاتيح ومقابس</a>
-                    <a href="#">اكسسوارات</a>
-                </div>
-                 <div class="footer-col">
-                    <h4>تواصل معنا</h4>
-                    <p>العنوان: 123 شارع الإضاءة...</p>
-                    <p>الهاتف: <a href="tel:123">123-456-7890</a></p>
-                    <p>البريد: <a href="mailto:info@example.com">info@example.com</a></p>
-                     <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                 <p>&copy; 2024 شركتك للإضاءة. جميع الحقوق محفوظة.</p>
-            </div>
+        <div style="font-size:.97rem;">
+          <div><a href="mailto:sales@lemarlighting.com">sales@lemarlighting.com</a></div>
+          <div style="margin-bottom:3px;"><a href="tel:+96264200733">+962 6 420 0733</a></div>
         </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+        <div class="footer-social">
+          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+          <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Links</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="careers.html">Career</a>
+        <a href="contact.html">Main Office</a>
+        <a href="head-office.html">Head office</a>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Products</div>
+        <a href="indoor-units.html">Indoor Units</a>
+        <a href="outdoor-units.html">Outdoor Units</a>
+        <a href="switches-sockets.html">Switches & Sockets</a>
+        <a href="alu-profile.html">Aluminium Profile</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Company</div>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="courses.html">Courses</a>
+        <a href="clients.html">Clients</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © 2025 | مؤسسة رواد الاردن التجارية Jordan pioneers trading est ووكلاء Infinity Lighting
+    </div>
+  </footer>
 </body>
-</html> 
+</html>
