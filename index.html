@@ -1,59 +1,375 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>LEMAR LIGHTING | Jordan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>الموقع تحت الصيانة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Reset & main font */
     body {
-      background-color: #f7f7f7;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      color: #333;
+      font-family: 'Roboto', 'Poppins', Arial, sans-serif;
+      color: #131313;
+      background: #fff;
     }
-    .container {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      max-width: 500px;
-      width: 90%;
-    }
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      font-size: 1em;
-      text-decoration: none;
-      background-color: #E1306C;
+    a { color: inherit; text-decoration: none; }
+    header, footer { width: 100%; }
+    .navbar {
+      background: #111;
       color: #fff;
-      border-radius: 8px;
-      transition: background-color 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3vw;
+      height: 65px;
     }
-    .btn:hover {
-      background-color: #c71f5f;
+    .navbar-logo { height: 38px; }
+    .nav-links { display: flex; gap: 25px; font-size: 17px; font-weight: 500; }
+    .nav-links a:hover { color: #e1212e; }
+    .hero {
+      background: url('https://ext.same-assets.com/2804546654/260918129.jpeg') top right/cover no-repeat, #000;
+      color: #fff;
+      min-height: 430px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 1;
+    }
+    .hero::before {
+      content:'';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.7);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 30px 10px 50px;
+    }
+    .hero-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+    .hero-desc {
+      opacity: .9;
+      font-size: 1.25rem;
+      margin-bottom: 28px;
+      font-style: italic;
+      font-family: 'Poppins';
+    }
+    .btn-main {
+      padding: 10px 34px;
+      border: 2px solid #e1212e;
+      background: none;
+      color: #fff;
+      font-size: 1.07rem;
+      font-family: inherit;
+      font-weight: 500;
+      text-transform: capitalize;
+      border-radius: 3px;
+      transition: all .2s;
+      cursor: pointer;
+    }
+    .btn-main:hover { background: #e1212e; border-color: #fff; }
+    main { max-width: 1020px; margin: 0 auto; padding: 0 12px; }
+    section { margin: 60px 0; }
+    .who { text-align: center; }
+    .who-title {
+      color: #e1212e; font-weight: bold;
+      letter-spacing: 0.16em;
+      font-size: 2.2rem; margin-bottom: 12px;
+    }
+    .who-txt { max-width: 670px; margin: 0 auto 20px; font-size: 1.08rem;}
+    .btn-about {
+      border: 2px solid #e1212e;
+      color: #e1212e;
+      background: none;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 8px 26px;
+      font-size: 1rem;
+      transition:.2s;
+      margin-top: 12px;
+    }
+    .btn-about:hover {color:#fff;background:#e1212e;}
+    .stats { display: flex; justify-content: center; gap: 54px; margin: 44px 0 0;}
+    .stat-item { display:flex; flex-direction:column; align-items:center;}
+    .stat-number {font-size:2.3rem; color:#e1212e; font-weight:700;}
+    .stat-label { font-size:1rem; color: #333; margin-top:3px; letter-spacing:0.08em;}
+    .headline {text-align: center;}
+    .headline-title {color:#e1212e; font-size:2rem;letter-spacing:.12em;margin-bottom:10px;}
+    .products-row {
+      display:flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 25px 0 0;
+      padding-bottom: 35px;
+      flex-wrap: wrap;
+    }
+    .prod-card {
+      background: #fff;
+      border-radius: 8px;
+      width: 205px;
+      box-shadow: 0 2px 12px #0002;
+      overflow: hidden;
+      margin-bottom: 24px;
+      border: 2.3px solid #e1212e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .prod-title {
+      background: #e1212e;
+      color:#fff;
+      font-size: 1.09rem;
+      font-family: 'Poppins';
+      font-weight: bold;
+      padding: 13px 0; width: 100%;
+      text-align: center;
+      letter-spacing: .1em;
+    }
+    .prod-link {
+      border: 1.5px solid #e1212e;
+      margin: 12px 0 15px;
+      color: #e1212e;
+      border-radius: 3px;
+      padding: 4px 16px;
+      font-size:1rem;
+      text-decoration:none;
+      transition: .2s;
+      background: #fff;
+      font-weight: 500;
+      display: inline-block;
+    }
+    .prod-link:hover {background: #e1212e;color:#fff;}
+    /* Contact/Forms */
+    .forms-section {
+      background: #faf9f9;
+      border-radius: 9px;
+      padding: 32px;
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 16px;
+    }
+    .contact-form { background: #fff8; border-radius: 7px; padding:24px; box-shadow:0 2px 10px #0001; width:340px; }
+    .contact-form h4 {text-align:center;margin-bottom:8px;font-size:1.02rem;}
+    .contact-form input,
+    .contact-form textarea {
+      display: block;
+      outline: none;
+      border: 1px solid #c5c7c7;
+      border-radius: 4px;
+      font-size: 1rem;
+      margin: 0 0 13px 0;
+      width: 100%;
+      padding: 8px 10px;
+      font-family: inherit;
+      background: #fff;
+    }
+    .contact-form textarea { min-height: 74px; }
+    .contact-form button {
+      border: 1.5px solid #e1212e;
+      color: #e1212e;
+      background: #fff;
+      border-radius: 3px;
+      padding: 5px 14px;
+      font-size:1rem;
+      font-weight: 600;
+      transition: .2s;
+    }
+    .contact-form button:hover { background: #e1212e; color: #fff;}
+    /* Footer */
+    footer {
+      background: #dbdbdb;
+      margin-top: 45px;
+      padding: 38px 0 15px;
+      color: #131313;
+      font-size: 1rem;
+    }
+    .footer-row {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0 10px;
+    }
+    .footer-col {
+      min-width: 180px;
+      margin: 0 0 12px;
+    }
+    .footer-logo {height:35px;margin-bottom:10px;}
+    .footer-links {display:flex; flex-direction:column; gap:6px;}
+    .footer-links a:hover {text-decoration: underline; color:#e1212e;}
+    .footer-title {font-weight:700;margin-bottom:5px;font-size:1rem;}
+    .footer-social {margin:10px 0; font-size:1.6rem;}
+    .footer-social a {margin-right:12px;color:#e1212e;text-decoration:none;}
+    .footer-social a:hover {opacity:.85;}
+    .footer-bottom {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+      margin: 13px 0 0;
+    }
+    @media (max-width: 950px) {
+      .products-row, .stats {flex-direction: column; align-items: center;}
+      .footer-row { flex-direction: column; align-items: center; gap: 18px;}
+      .prod-card {width:94vw;}
     }
   </style>
+  <!-- أيقونات FontAwesome مجانية -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🚧 الموقع تحت الصيانة 🚧</h1>
-    <p>نقوم ببعض التحسينات. شكرًا لصبرك!</p>
-    <a href="https://www.instagram.com/_awsafaneh" class="btn" target="_blank">تابع @_awsafaneh</a>
-    <a href="https://www.instagram.com/tech_by_aws" class="btn" target="_blank">تابع @tech_by_aws</a>
-  </div>
+  <!-- Header/Navbar -->
+  <header>
+    <div class="navbar">
+      <img src="https://ext.same-assets.com/2804546654/2626856418.png" alt="LEMAR Lighting Logo" class="navbar-logo"/>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#" style="font-weight:bold;">العربية</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">LIGHTING SUPPLIER<br>IN JORDAN</h1>
+      <div class="hero-desc">Discover a new world of lighting technology</div>
+      <a href="products.html" class="btn-main">Discover More</a>
+    </div>
+  </section>
+  <main>
+    <!-- WHO WE ARE -->
+    <section class="who" id="about">
+      <div class="who-title">WHO WE ARE</div>
+      <div class="who-txt">
+        Lamar Lighting is a company specialized in the field of lighting founded in Amman – Jordan 2013, the company provides wide range of luminaires units that are selected carefully according to international standards and specifications.
+        <br><br>
+        Our products include indoor and outdoor luminaires with different design patterns to ensure the most advanced and energy-efficient lighting solution on a continuous basis To meet the needs of factories, offices, hospitals and garden lighting And houses, streets, etc.
+        <br><br>
+        We dedicate ourselves to develop and improve the quality of products to satisfy our valued customers as we are committed to bringing the best products to the market we are proud to be known as a trusted partner providing customers with insight and invaluable support.
+      </div>
+      <a href="about.html" class="btn-about">Read More</a>
+    </section>
+    <!-- إحصائيات -->
+    <div class="stats">
+      <div class="stat-item"><div class="stat-number">580</div><div class="stat-label">Products</div></div>
+      <div class="stat-item"><div class="stat-number">45</div><div class="stat-label">Employees</div></div>
+      <div class="stat-item"><div class="stat-number">296</div><div class="stat-label">Projects</div></div>
+      <div class="stat-item"><div class="stat-number">20</div><div class="stat-label">Distributors</div></div>
+    </div>
+    <!-- العنوان -->
+    <section class="headline">
+      <div class="headline-title">FUTURE IN YOUR HANDS</div>
+      <div>In Lemar we work hard to bring all new lighting technology to our customer, you don't need to looking elsewhere.</div>
+    </section>
+    <!-- المنتجات الرئيسية -->
+    <section>
+      <div class="products-row">
+        <div class="prod-card">
+          <div class="prod-title">3D SERIES</div>
+          <a href="products.html#3d" class="prod-link">Discover more</a>
+        </div>
+        <div class="prod-card">
+          <div class="prod-title">MAGNETIC SERIES</div>
+          <a href="products.html#magnetic" class="prod-link">Discover more</a>
+        </div>
+        <div class="prod-card">
+          <div class="prod-title">INDUSTRIAL SERIES</div>
+          <a href="products.html#industrial" class="prod-link">Discover more</a>
+        </div>
+        <div class="prod-card">
+          <div class="prod-title">ALU PROFILE</div>
+          <a href="products.html#alu" class="prod-link">Discover more</a>
+        </div>
+      </div>
+    </section>
+    <!-- تواصل معنا -->
+    <section id="contact">
+      <h2 style="color:#e1212e; text-align:center; letter-spacing:.18em; margin:40px 0 5px;">Contact Us</h2>
+      <h3 style="text-align:center;margin-bottom:23px;">send a message</h3>
+      <div class="forms-section">
+        <form class="contact-form">
+          <h4>for our clients out jordan</h4>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <form class="contact-form">
+          <h4>for our clients inner jordan</h4>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-row">
+      <div class="footer-col">
+        <img src="https://ext.same-assets.com/2804546654/2626856418.png" class="footer-logo" alt="Logo"/>
+        <div style="font-size:.97rem; margin-bottom:13px;">
+        At <b>Lemar Lighting</b>, we provide efficient, sustainable, and tailored lighting solutions that enhance spaces and reduce energy costs. Since 2013, we’ve been helping businesses, architects, and designers worldwide create smarter, more impactful environments with lighting that meets the highest global standards.
+        </div>
+        <div style="font-size:.97rem;">
+          <div><a href="mailto:sales@lemarlighting.com">sales@lemarlighting.com</a></div>
+          <div style="margin-bottom:3px;"><a href="tel:+96264200733">+962 6 420 0733</a></div>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+          <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+          <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Links</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="careers.html">Career</a>
+        <a href="contact.html">Main Office</a>
+        <a href="head-office.html">Head office</a>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Products</div>
+        <a href="indoor-units.html">Indoor Units</a>
+        <a href="outdoor-units.html">Outdoor Units</a>
+        <a href="switches-sockets.html">Switches & Sockets</a>
+        <a href="alu-profile.html">Aluminium Profile</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <div class="footer-col footer-links">
+        <div class="footer-title">Company</div>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="courses.html">Courses</a>
+        <a href="clients.html">Clients</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="news.html">News</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      جميع الحقوق محفوظة © 2025 | مؤسسة رواد الاردن التجارية Jordan pioneers trading est ووكلاء Infinity Lighting
+    </div>
+  </footer>
 </body>
 </html>
