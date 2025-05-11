@@ -1,58 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap');
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
 
-body { margin:0; font-family:'Roboto','Poppins',Arial,sans-serif; color:#131313; background:#fff; }
-a { color:inherit; text-decoration:none; }
-header,footer { width:100%; }
-.navbar { background:#111; color:#fff; display:flex; justify-content:space-between; align-items:center; padding:0 3vw; height:65px; }
-.navbar-logo { height:38px; }
-.nav-links { display:flex; gap:25px; font-size:17px; font-weight:500; }
-.nav-links a:hover { color:#e1212e; }
-.hero { background:url('https://ext.same-assets.com/2804546654/260918129.jpeg') top right/cover no-repeat,#000; color:#fff; min-height:430px; position:relative; display:flex; align-items:center; justify-content:center; text-align:center; z-index:1;}
-.hero::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.7); z-index:0;}
-.hero-content { position:relative; z-index:2; padding:30px 10px 50px;}
-.hero-title { font-size:2.4rem; font-weight:700; letter-spacing:.12em; margin-bottom:18px; text-transform:uppercase; }
-.hero-desc { opacity:.9; font-size:1.25rem; margin-bottom:28px; font-style:italic; font-family:'Poppins'; }
-.btn-main { padding:10px 34px; border:2px solid #e1212e; background:none; color:#fff; font-size:1.07rem; font-family:inherit; font-weight:500; text-transform:capitalize; border-radius:3px; transition:all .2s; cursor:pointer; }
-.btn-main:hover { background:#e1212e; border-color:#fff; }
-main { max-width:1020px; margin:0 auto; padding:0 12px; }
-section { margin:60px 0; }
-.who { text-align:center; }
-.who-title { color:#e1212e; font-weight:bold; letter-spacing:.16em; font-size:2.2rem; margin-bottom:12px; }
-.who-txt { max-width:670px; margin:0 auto 20px; font-size:1.08rem;}
-.btn-about { border:2px solid #e1212e; color:#e1212e; background:none; font-weight:600; border-radius:4px; padding:8px 26px; font-size:1rem; transition:.2s; margin-top:12px;}
-.btn-about:hover {color:#fff;background:#e1212e;}
-.stats { display:flex; justify-content:center; gap:54px; margin:44px 0 0;}
-.stat-item { display:flex; flex-direction:column; align-items:center;}
-.stat-number {font-size:2.3rem; color:#e1212e; font-weight:700;}
-.stat-label { font-size:1rem; color:#333; margin-top:3px; letter-spacing:0.08em;}
-.headline {text-align:center;}
-.headline-title {color:#e1212e; font-size:2rem;letter-spacing:.12em;margin-bottom:10px;}
-.products-row { display:flex; gap:20px; justify-content:center; margin:25px 0 0; padding-bottom:35px; flex-wrap:wrap;}
-.prod-card { background:#fff; border-radius:8px; width:205px; box-shadow:0 2px 12px #0002; overflow:hidden; margin-bottom:24px; border:2.3px solid #e1212e; display:flex; flex-direction:column; align-items:center; justify-content:flex-start;}
-.prod-title { background:#e1212e; color:#fff; font-size:1.09rem; font-family:'Poppins'; font-weight:bold; padding:13px 0; width:100%; text-align:center; letter-spacing:.1em;}
-.prod-link { border:1.5px solid #e1212e; margin:12px 0 15px; color:#e1212e; border-radius:3px; padding:4px 16px; font-size:1rem; text-decoration:none; transition:.2s; background:#fff; font-weight:500; display:inline-block;}
-.prod-link:hover {background:#e1212e;color:#fff;}
-.forms-section { background:#faf9f9; border-radius:9px; padding:32px; display:flex; gap:36px; flex-wrap:wrap; justify-content:center; margin-top:16px;}
-.contact-form { background:#fff8; border-radius:7px; padding:24px; box-shadow:0 2px 10px #0001; width:340px; }
-.contact-form h4 {text-align:center;margin-bottom:8px;font-size:1.02rem;}
-.contact-form input,
-.contact-form textarea { display:block; outline:none; border:1px solid #c5c7c7; border-radius:4px; font-size:1rem; margin:0 0 13px 0; width:100%; padding:8px 10px; font-family:inherit; background:#fff;}
-.contact-form textarea { min-height:74px;}
-.contact-form button { border:1.5px solid #e1212e; color:#e1212e; background:#fff; border-radius:3px; padding:5px 14px; font-size:1rem; font-weight:600; transition:.2s;}
-.contact-form button:hover { background:#e1212e; color:#fff;}
-footer { background:#dbdbdb; margin-top:45px; padding:38px 0 15px; color:#131313; font-size:1rem;}
-.footer-row { max-width:1140px; margin:0 auto; display:flex; gap:30px; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; padding:0 10px;}
-.footer-col { min-width:180px; margin:0 0 12px;}
-.footer-logo {height:35px;margin-bottom:10px;}
-.footer-links {display:flex; flex-direction:column; gap:6px;}
-.footer-links a:hover {text-decoration:underline; color:#e1212e;}
-.footer-title {font-weight:700;margin-bottom:5px;font-size:1rem;}
-.footer-social {margin:10px 0; font-size:1.6rem;}
-.footer-social a {margin-right:12px;color:#e1212e;text-decoration:none;}
-.footer-social a:hover {opacity:.85;}
-.footer-bottom { text-align:center; font-size:0.95rem; color:#555; margin:13px 0 0;}
-@media (max-width:950px) {
-  .products-row, .stats {flex-direction:column; align-items:center;}
-  .footer-row { flex-direction:column; align-items:center; gap:18px;}
-  .prod-card {width:94vw;}
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /* 
+        Change favorite color
+        Default: hsl(230, 55%, 55%)
+        Purple: hsl(245, 55%, 55%) - Blue: hsl(210, 55%, 55%)
+        Pink: hsl(340, 55%, 55%) - Green: hsl(162, 55%, 55%)
+        Orange: hsl(14, 55%, 55%)
+
+        For more colors visit: https://colors.dopely.top/color-pedia
+        -> Choose any color 
+        -> Click on tab (Color Conversion)
+        -> Copy the color mode (HSL)
+  */
+  --hue: 230;
+  --first-color: hsl(var(--hue), 55%, 55%);
+  --first-color-light: hsl(var(--hue), 55%, 65%);
+  --first-color-alt: hsl(var(--hue), 50%, 50%);
+  --title-color: hsl(var(--hue), 30%, 95%);
+  --text-color: hsl(var(--hue), 20%, 80%);
+  --text-color-light: hsl(var(--hue), 20%, 70%);
+  --body-color: hsl(var(--hue), 40%, 16%);
+  --container-color: hsl(var(--hue), 40%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --biggest-font-size: 3rem;
+  --big-font-size: 1.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
+
+/*========== Responsive typography==========*/
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 5.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+input,
+button,
+textarea {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+p {
+  line-height: 130%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+/*=============== HEADER & NAV ===============*/
+
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+
+
+/* Add blur header */
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+
+
+/* Animate scroll icon */
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== WORKS ===============*/
+
+
+/*=============== INFO ===============*/
+
+
+/* ABOUT */
+
+
+/* EXPERIENCE */
+
+
+/* SKILLS */
+
+
+/*=============== SERVICES ===============*/
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
